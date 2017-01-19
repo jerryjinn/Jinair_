@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*티켓 헤더*/
+.al_header{border-bottom: 1px solid #c6c2c1;}
+.al_header ol{margin: 25px 0 30px 0;}
+.al_header ol li,.al_header ol li+li{float: left;font-size: 19px;margin-right: 35px;height: 34px;background: url(../images/airline_ticket/bg_circle_1.png) 0 0 no-repeat;}
+.al_header ol li span{width: 34px;height: 34px;line-height: 34px;text-align: center;display: inline-block;margin-right: 10px;color: #fff;}
+.airline_tk .al_header ol li+li+li{background: url(../images/airline_ticket/bg_circle_2.png) 0 0 no-repeat;}
+.airline_tk .al_header ol li+li+li span{color: #4c4c4c;background: #4c4c4c;}
+.al_header ol+h3{font-size: 37px;color: #661f43;margin-bottom: 5px;}
+.al_header p{color: #661f43;margin-bottom: 25px;}
+.passenger_info{margin-top: 25px;border-bottom: 1px solid #c6c2c1;}
+.passenger_info .passenger_left{width: 41.667%;float: left;padding-left: 2.604%;}
+.passenger_info .passenger_right{width: 58.333%;float: left;}
+.passenger_left .psg_name{margin-bottom: 10px;}
+.passenger_left .psg_name p{font-size: 14px;} 
+.passenger_left .psg_name p+p{font-size: 21px;}
+.passenger_left .psg_alert{background: url(../images/airlineTicket_2/bg_information.png) 0 50% no-repeat;padding-left: 15px;color: #c2262e;margin-bottom: 10px;}
+.passenger_left .psg_desc{font-size: 14px;}
+.passenger_right input,.passenger_right select{padding-left: 10px;}
+.passenger_right .required_input{font-size: 14px;margin-bottom: 17px;}
+.passenger_right #passenger_title{width: 47.857%;height: 49px;margin-bottom: 10px;}
+.passenger_name .passenger_name input{width: 95.536%;height: 49px;margin-right: 4.464%;margin-bottom: 10px;}
+.input_details{margin-bottom: 6px;}
+.input_details p{font-size: 14px;}
+.psg_radio_wrap{margin-bottom: 15px;}
+.psg_radio_wrap .psg_radio{float: left;}
+.psg_radio_wrap label{margin-right: 15px;}
+.contact_num{margin-bottom: 10px;}
+.contact_num .country_num select{float: left;width: 46.071%;margin-right: 1.785%;height: 49px;}
+.contact_num .tel_num input{float: left;width: 47.857%;margin-right: 4.287%;height: 49px;}
+.email_address input{width: 95.536%;height: 49px;margin-right: 4.464%;margin-bottom: 30px;}
+.new_letter {font-size: 14px;}
+.new_letter p{margin-bottom: 12px;}
+.new_letter .new_chk_box{margin-bottom: 40px;}
+.passenger_right button{width: 180px;height: 45px;border: 1px solid #661f43;background: #fff;color: #661f43;margin-bottom: 27px;}
+.passenger_right button:hover, .passenger_right button:focus{background: #661f43;color: #fff;}
+.passenger_bottom{margin-top: 20px;}
+.personal_information .psn_info_header dt{font-size: 24px;color: #661f43;margin-bottom: 5px;}
+.personal_information .psn_info_header dd{font-size: 14px;margin-bottom: 15px;}
+.personal_information .psn_info_list{font-size: 14px;}
+.personal_information .psn_info_list>li{border-top: 1px solid #c6c2c1;padding: 17px 30px;color: #661f43;position: relative;}
+.personal_information .psn_info_list>li:before{display: inline-block;content: "\f004";font-family: 'fontello';color: #661f43;margin-right: 10px;position: absolute;
+top:11px;left: 0;font-size: 25px;}
+.personal_information .psn_info_list>li dl dd{color: #4c4c4c;display: none;}
+.personal_information .psn_info_list>li dl dd p{margin-top: 19px;}
+.personal_information .psn_info_list>li dl dd ul {margin-top: 19px;}
+.personal_information .psn_info_list>li dl dd ul li{padding-left: 15px;background: url(../images/airline_ticket/bullet_circle.png) 0 center no-repeat;margin-bottom: 19px;}
+
+/*
+.personal_information .psn_info_list>li dl{margin-top: 20px;}
+.personal_information .psn_info_list>li dl dt{color: #4c4c4c;margin-bottom: 19px;}
+.personal_information .psn_info_list>li ul{color: #4c4c4c;}
+.personal_information .psn_info_list>li p{color: #4c4c4c;margin-top: 19px;}
+.agree_box {width: 100%;height: 47px;line-height: 47px;background: #ebedec;padding-left: 20px;}*/
+
+
+
+/*continue_box */
+.std_continue_box .continue_box{background: #ebedec;height: 116px;position: relative;padding:35px 1.6%;margin-top: 40px;}
+.std_continue_box .continue_box{background: #ebedec;height: 116px;position: relative;padding: 35px 1.6%;margin-top: 40px;}
+.std_continue_box .continue_box .date_summary ul{float: left;font-size: 14px;font-weight: bold;	padding-bottom:3px;float: left;}
+.std_continue_box .continue_box .date_summary ul li {margin-bottom: 5px;}
+.std_continue_box .continue_box .date_summary .price_krw{float: right;padding-right: 18%;font-size: 30px;color: #661f43;}
+.std_continue_box .continue_box .date_summary a{float: left: ;width:16.145%;height: 45px;line-height: 45px;text-align: center;	color: #fff;position:absolute;right: 1.6%;top:34px; background: #661f43;}
+.std_continue_box .price_desc{margin: 15px 0 25px 0;text-align: right;}
+.std_continue_box .price_desc a{color: #661f43;font-weight: bold;}
+ a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;}

@@ -1,0 +1,404 @@
+
+<? include "inc/top.html" ?>
+  <title>JINAIR</title>
+ </head>  
+ <body>
+  <!--헤더영역-->
+  <? include "inc/header.html" ?>
+  <!--//헤더영역-->
+  <!--컨테이너영역-->
+  <div id="container_wrap">
+    <h3 class="blind">진에어 특가</h3>
+    <div class="main_visual_wrap">
+      <div class="main_visual">
+        <a href="#">
+          <p>얼리버드 티켓<br/> 믿을 수 없는 가격! </p>
+          <p>12월 그리스 1,097,800원*부터</p>
+          <p>*1인 왕복기준, 세금/유류할증료 포함 총 운임, 발권일/ 환율 따라 변동, 기타 약관과 조건 적용</p>
+        </a>
+      </div>
+    </div>
+    <div class="main_tab_wrap" data-type="tabmenu">
+        <div class="main_tab">
+          <h3 class="blind">항공권 예약 </h3>
+            <h4 class="btn_1 on"><button class="tab_btn">국내선</button></h4>
+            <!--항공권 예약-->
+            <? include "inc/reservation.html" ?>
+            <!--//항공권 예약-->
+            <h4 class="btn_2"><button class="tab_btn">국제선</button></h4>
+            <div>
+              <form action="#">
+                <fieldset>
+                  <legend>항공권</legend>
+                  <div class="trip_type">
+                    <input type="radio" name="trip_t_2" id="round_trip_2" checked="checked" class="blind">
+                    <label for="round_trip_2">왕복</label>
+                    <input type="radio" name="trip_t_2" id="one_way_trip_2" class="blind">
+                    <label for="one_way_trip_2">편도</label>
+                  </div>
+                  <ul class="clearFix">
+                    <li><a href="#">보너스 항공권</a></li>
+                    <li><a href="#">복수 목적지/스톱오버</a></li>
+                  </ul>
+                  <div class="airport clearFix">
+                    <div class="flight_depart">
+                      <label for="flight_depart_2">1ㅋㅋㅇㄹㄴㅇㄹ23</label>
+                      <input type="text" name="flight_depart_2" id="flight_depart_2" >
+                    </div>
+                    <div class="flight_destination">
+                      <label for="flight_destination_2">도착</label>
+                      <input type="text" name="flight_destination_2" id="flight_destination_2">
+                    </div>
+                  </div>
+                  <div class="flight_date">
+                    <div class="btn_date_picker">
+                      <span>출국일</span>
+                      <button><span>2017년 1월 1일</span></button>
+                    </div>
+                    <div class="btn_date_picker">
+                      <span>귀국일</span>
+                      <button><span>2017년 2월 1일</span></button>
+                    </div>
+                  </div>
+                  <div class="passenger">
+                    <span>승객/좌석등급</span>
+                    <button><span>1 승객/프리미엄</span></button>
+                  </div>
+                  <button type="submit">항공편 검색</button>
+                </fieldset>
+              </form>
+            </div>
+            <h4 class="btn_3"><button class="tab_btn">체크인</button></h4>
+            <div>
+              <form action="#">
+                <fieldset>
+                  <legend>항공권</legend>
+                  <div class="trip_type">
+                    <input type="radio" name="trip_t_3" id="round_trip_3" checked="checked" class="blind">
+                    <label for="round_trip_3">왕복</label>
+                    <input type="radio" name="trip_t_3" id="one_way_3" class="blind">
+                    <label for="one_way">편도</label>
+                  </div>
+                  <ul class="clearFix">
+                    <li><a href="#">보너스 항공권</a></li>
+                    <li><a href="#">복수 목적지/스톱오버</a></li>
+                  </ul>
+                  <div class="airport clearFix">
+                    <div class="flight_depart">
+                      <label for="flight_depart_3">123</label>
+                      <input type="text" name="flight_depart_3" id="flight_depart_3" >
+                    </div>
+                    <div class="flight_destination">
+                      <label for="flight_destination_3">도착</label>
+                      <input type="text" name="flight_destination_3" id="flight_destination_3">
+                    </div>
+                  </div>
+                  <div class="flight_date">
+                    <div class="btn_date_picker">
+                      <span>출국일</span>
+                      <button><span>2017년 1월 1일</span></button>
+                    </div>
+                    <div class="btn_date_picker">
+                      <span>귀국일</span>
+                      <button><span>2017년 2월 1일</span></button>
+                    </div>
+                  </div>
+                  <div class="passenger">
+                    <span>승객/좌석등급</span>
+                    <button><span>1 승객/프리미엄</span></button>
+                  </div>
+                  <button type="submit">항공편 검색</button>
+                </fieldset>
+              </form>
+            </div>
+            <h4 class="btn_4"><button class="tab_btn">예약관리</button></h4>
+            <!--항공권 예약-->
+            
+            <!--//항공권 예약-->
+        </div>
+    </div>
+    <div id="container">
+      <div class="content_2">
+        <div class="trip_promotion">
+          <h3 class="blind">진에어 프로모션</h3>
+          <div class="promotion_header">
+            <div class="lastest_promotion">최신 항공 특가 (왕복) - 출발 도시 :</div>
+            <div class="destination_list">
+              <label for="destination" class="blind">출발도시</label>
+              <select name="destination" id="destination">
+                <option value="서울">서울</option>
+                <option value="부산">부산</option>
+                <option value="제주">제주</option>
+              </select>
+            </div>
+          </div>
+          <ul class="clearFix">
+            <li class="main_prm clearFix">
+              <div class="cover"><img src="images/main/trip_main.png" alt="괌"><span></span></div>
+              <div class="description">
+                <h4>
+                  <span>말레,</span>
+                  <span>몰디브</span>
+                </h4>
+                <div class="item">
+                  <div class="group">
+                    <div class="pmt">몰디브 2인 동반 비즈니스석 특가</div>
+                    <a href="#">항공편 2,717,800원부터</a>
+                    <div class="f_cls">비즈니스석</div>
+                  </div>
+                </div>
+                <div class="link"><a href="#">몰디브 가이드 보기</a></div>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_1.png" alt="싱가포르"></a></div>
+              <div class="information">
+                <h4>싱가포르</h4>
+                <div class="desc">방콕&#38; 싱가포르 얼리버드 특가 1월 ~6월 출발</div>
+                <a href="#" class="price">항공편<br/>424,900원부터 </a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">싱가포르 가이드보기</a>
+              </div>
+            </li>
+            <li class="secondary_prm clearFix">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_2.png" alt="볼리비아"></a></div>
+              <div class="information">
+                <h4>볼리비아</h4>
+                <div class="desc">남미 4개국 15일(우유니 소금사막)</div>
+                <a href="#" class="price">항공편 <br/>874,200원부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">남미 가이드보기</a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_3.png" alt="후쿠오카"></a></div>
+              <div class="information">
+                <h4>후쿠오카</h4>
+                <div class="desc">후쿠오카 벳부 유후인 료칸 여행</div>
+                <a href="#" class="price">항공편 <br/>341,800원부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">후쿠오카 가이드 보기</a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_4.png" alt="페루"></a></div>
+              <div class="information">
+                <h4>페루</h4>
+                <div class="desc">취향 기념 특가</div>
+                <a href="#" class="price">항공편 <br/>997,500원부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">페루 가이드 보기</a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_5.png" alt="로마"></a></div>
+              <div class="information">
+                <h4>로마</h4>
+                <div class="desc">유럽 얼리버드 특가 12월 ~17년 3월출발  </div>
+                <a href="#" class="price">항공편 <br/>766,500부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">로마 가이드 보기  </a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_6.png" alt="홍콩"></a></div>
+              <div class="information">
+                <h4>홍콩</h4>
+                <div class="desc">홍콩&#38;타이베이 2인 동반 비즈니스석 특가</div>
+                <a href="#" class="price">항공편 <br/>833,500원부터</a>
+                <div class="flight_class">비즈니스석</div>
+                <a href="#" class="guide">홍콩 가이드 보기  </a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_7.png" alt="아이슬란드"></a></div>
+              <div class="information">
+                <h4>아이슬란드</h4>
+                <div class="desc">아이슬란드 특가 </div>
+                <a href="#" class="price">항공편<br/>1,005,700원부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">아이슬란드 가이드 보기 </a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_8.png" alt="몽골"></a></div>
+              <div class="information">
+                <h4>몽골</h4>
+                <div class="desc">몽골 특가 </div>
+                <a href="#" class="price">항공편<br/>720,300원부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">몽골 가이드 보기  </a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_9.png" alt="인도"></a></div>
+              <div class="information">
+                <h4>인도</h4>
+                <div class="desc">인도 럭셔리 여행 특가</div>
+                <a href="#" class="price">항공편<br/>448,000원부터</a>
+                <div class="flight_class"></div>
+                <a href="#" class="guide"></a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_10.png" alt="호주"></a></div>
+              <div class="information">
+                <h4>호주</h4>
+                <div class="desc">호주 뉴질랜드학생&#38;워킹 홀리데이 특가   </div>
+                <a href="#" class="price">항공편<br/>790,800원부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">시드니 가이드 보기  </a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_11.png" alt="프랑스"></a></div>
+              <div class="information">
+                <h4>프랑스</h4>
+                <div class="desc">신혼여행 특가 </div>
+                <a href="#" class="price">항공편<br/>1,087,100부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">파리 가이드 보기 </a>
+              </div>
+            </li>
+            <li class="secondary_prm">
+              <div class="cover_img"><a href="#"><img src="images/main/trip_12.png" alt="대만"></a></div>
+              <div class="information">
+                <h4>대만</h4>
+                <div class="desc">포켓 와이파이 1일 무료 사용 혜택</div>
+                <a href="#" class="price">항공편<br/>341,800원부터</a>
+                <div class="flight_class">일반석</div>
+                <a href="#" class="guide">타이베이 가이드 보기 </a>
+              </div>
+            </li>
+          </ul>
+          <div class="term_service">
+            <p>요금에는 적용가능한 모든 세금 및 유류할증료가 포함되어 있으며, 발권일 환율및 유류할증료 변동에 따라 달라 질 수 있습니다.</p>
+          </div>
+          <div class="service_info">
+            <a href="#">시티가이드</a>
+            <a href="#">특가혜택</a>
+            <a href="#">취항지 안내</a>
+          </div>
+        </div>
+        <div class="nabi_point clearFix">
+          <div class="promotion_img"></div>
+          <div class="details">
+            <h3>
+            <strong>한국-라오스</strong> 왕복 여행시
+            <br/>
+            최대 <strong>5배</strong>
+            <br/>
+            나비포인트 <strong>적립</strong>!
+            </h3>
+            <a class="more" href="#">자세히보기</a>
+          </div>
+        </div>
+        <div class="lent_a_car clearFix">
+          <div class="promotion_img"></div>
+          <div class="details">
+            <h3>눈부시게 아름다운 <strong>괌,</strong> 걱정없이 <strong>24시간</strong> 신나게 달려보자!</h3>
+            <div class="description">
+              지니텔 여행, 그리고 간편함 하나더,<br/>
+              진에어 지니텔 여행쇼핑
+              <a class="more" href="#">자세히보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="travel clearFix">
+          <div class="promotion_img"></div>
+          <div class="details">
+            <h3>
+              뻔~한 여행은 그만!
+              <br/>      
+              <strong>FUN</strong>하게 떠는 <strong>남미여행</strong>!
+            </h3>
+            고객님들은 위한 현지 라운지 11대 특전 무료 제공
+            <br/>
+            쏙!쏙! 필요한 사항만 모아서 실속있게 떠나자!
+            <a class="more" href="#">자세히보기</a>
+          </div>
+        </div>
+        <div class="news_letter_wrap">
+          <div class="news_letter">
+            <h3>뉴스레터 구독 신청</h3>
+            <div class="new_header">회원 전용 최신 혜택을 이메일로 직접 받아 보세요.</div>
+            <div class="subscription_login">
+              <div class="radio_group">
+                <input type="radio" name="member_chk" id="no_member" checked="checked">
+                <label for="no_member">구독하시려면 계정을 등록하세요</label>
+                <input type="radio" name="member_chk" id="member">
+                <label for="member">이미 등록하셨나요? 로그인하여 구독 신청</label>
+              </div>
+            </div>
+            <form action="#" method="post">
+              <div class="subscribe_wrap">
+                <fieldset>
+                  <legend>비회원 뉴스레터 구독 신청</legend>
+                  <div class="clearFix">
+                    <div class="customer_gender">
+                      <span></span>
+                        <select name="customer_gender" id="customer_gender">
+                            <option value="Mr">Mr</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Professor">Professor</option>
+                            <option value="Master">Master</option>
+                          </select>
+                    </div>
+                    <div class="customer_name">
+                      <label for="customer_first_name">이름</label>
+                      <input type="text" name="customer_first_name" id="customer_first_name">
+                    </div>
+                    <div class="customer_name">
+                      <label for="customer_last_name">성</label>
+                      <input type="text" name="customer_last_name" id="customer_last_name">
+                    </div>
+                    <div class="customer_email">
+                      <label for="customer_email">이메일</label>
+                      <input type="text" name="customer_email" id="customer_email">
+                    </div>
+                  </div>
+                  <div class="legal_notice">
+                    <input type="checkbox" name="legal_notice" id="legal_notice" checked>
+                    <label for="legal_notice">
+                      <span>
+                        진에어가 제공하는 여행 및 고객 우대 프로그램 행사, 프로모션 및 뉴스를 받아 보려면 등록된 고객 계정을 만드세요. 진에어의 
+                        <a href="#" class="txt_st">개인정보 취급방침</a>
+                        및 
+                        <a href="#" class="txt_st">약관과 조건</a>
+                        새 창에서 열기이 적용됩니다. 개인 정보 수집 및 이용에 관한 
+                        <a href="#" class="txt_st">고지 내용 및 유의사항</a>
+                        을 확인하였으며 이에 동의합니다.
+                      </span>
+                    </label>
+                  </div>
+                  <button type="submit">신청</button>
+                </fieldset>
+              </div>
+            </form>
+            <!-- <form action="#" method="post">
+              <fieldset>
+                <legend>회원 뉴스레터 구독 신청</legend>
+                <div class="customer_id">
+                  <label for="customer_id">회원번호/이메일 입력</label>
+                  <input type="text" name="customer_id" id="customer_id">
+                </div>
+                <div class="customer_pw">
+                  <label for="customer_pw">비밀번호 입력</label>
+                  <input type="password" name="customer_pw" id="customer_pw">
+                </div>
+              </fieldset>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//컨테이너영역-->
+  <!--푸터영역-->
+  <? include "inc/footer.html" ?>
+  <!--//푸터영역-->
+ </body>
+</html>

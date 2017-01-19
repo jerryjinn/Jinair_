@@ -1,0 +1,298 @@
+<? include "inc/top.html" ?>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+  <script src="js/sub_trip.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(".mySlide_1").bxSlider({auto:true, autoControls:true,pager:true}); //메소드 적용 
+        //auto:true : 자동으로 넘어가라 
+        //autoControls : 재생, 정지 , 기본이 false임 
+        //controls : 전,후페이지 넘김 
+        //pager : 페이지 
+      });
+    </script>
+  <title>진에어 | 여행정보</title>
+  <link rel="stylesheet" type="text/css" href="css/trip.css" media="all">
+ </head>  
+ <body>
+  <!--헤더영역-->
+  <? include "inc/header.html" ?>
+  <!--//헤더영역-->
+  <!--컨테이너영역-->
+  <div id="container_wrap">
+    <div class="trip_header std_section_wrap">
+      <div class="std_section">
+        <div class="header_img">
+          <div class="header_title">
+            <h3><strong>페루,</strong> 남미</h3>
+          </div>  
+          <div class="header_navigation">
+            <ul class="clearFix">
+              <li>남미 가이드<img src="images/trip/icon_map.png" alt="남미가이드"></li>
+              <li><a href="airlineTicket.html"><img src="images/trip/icon_rsv.png" alt="항공 예약">항공편</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="guide_info std_section_wrap">
+      <div class="std_section">
+        <div class="summary">
+          <p>지구 반대편에 있는 경이로운 대륙, 남미페루/볼리비아/칠레/아르헨티나/브라질/파타고니아<br/>
+           잉카제국의 천년의 고도, 잃어버린 공중도시 남미의 절대 하이라이트!!</p>
+        </div>
+        <div class="gallery_container">
+          <div class="gallery_img wrap">
+            <div class="slideWrap">
+              <ul class="mySlide_1">
+                <li><a href="#"><img src="images/trip/bg_rolling_1.jpg" alt=""></a>
+                <div class="gallery_info">
+                  <div class="img_num"><span>1</span>/4 우유니사막 </div>
+                </div>
+                </li>
+                <li><a href="#"><img src="images/trip/bg_rolling_2.jpg" alt=""></a>
+                  <div class="gallery_info">
+                    <div class="img_num"><span>2</span>/4 해변 </div>
+                  </div>  
+                </li>
+                <li>
+                <a href="#"><img src="images/trip/bg_rolling_3.jpg" alt=""></a>
+                </li>
+                <li><a href="#"><img src="images/trip/bg_rolling_4.jpg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="things_to_do std_section_wrap">
+      <div class="std_section">
+        <div class="things_header">
+          <h3>가볼만한 곳</h3>
+          <p>이 도시의 추천 여행지 및 하이라이트를 선정했습니다.</p> 
+          <p class="things_list">
+            검색하기
+            <select name="things_list" id="things_list">
+              <option value="남미 가볼만한곳">남미 가볼만한곳</option>
+              <option value="Eat">Eat</option>
+              <option value="Do">Do</option>
+              <option value="See">See</option>      
+            </select>
+          </p>
+        </div>
+        <div class="things_container clearFix">
+          <div class="to_do_column">
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_1.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">아르헨티나 모레노빙하</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                  파타고니아는 그 극적인 매력으로 우리를 부른다―메마른 사막, 얼어붙은 바다, 직선으로 뻗은 고속도로가 그것이다. 그러나 꼭 그것뿐만은 아니다. 남위 50도 선을 따라 서쪽으로 건조한 스텝을 가로질러 달리면, 오래된 너도밤나무 숲과 안데스 산맥의 뾰족뾰족한 봉우리에 둘러싸인 페리토 모레노 빙하에 다다르게 된다. 보는 이가 넋을 잃게 만드는 로스 글라시아레스 국립공원의 주인공인 모레노 빙하는 초현실적으로 아름답고 매혹적이다. 피츠로이와 다윈이 1831~1836년 저 유명한 원정에 나섰을 때 "거의 발견하다시피" 했던 이 빙하는 1877년 프란시스코 파스카시오 모레노가 마침내 발견해냈다.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div>
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_2.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">볼리비아 소금사막</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                  중부 안데스 산지의 고원 지대인 알티플라노(Altiplano) 남부에 형성된 소금 호수로, ‘우유니 소금사막’ 혹은 ‘우유니 염지’ 등으로도 불린다. 호수의 서쪽 가장자리는 안데스 산맥의 일부인 옥시덴탈 산계(Cordillera Occidental)에 의해 칠레와 국경을 이루며, 호수를 포함해 그 동편은 볼리비아의 영토이다. 볼리비아의 실질적 수도인 라파스(La Paz)로부터 남쪽으로 200㎞ 떨어져 있으며, 행정 구역상 포토시(Potosí) 주에 속하고, 우유니 시 서쪽 끝에 자리하고 있다. 해발 고도는 3,680m에 이르며, 면적은 12,000㎢ 정도이다.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div> 
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_3.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">브라질 해변</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                  페르난두데노로냐(Fernando de Noronha). 브라질 본토의 해안선에서 324킬로미터 떨어져있고, 배가 다니지 않아 비행기를 타고 들어갈 수밖에 없는 섬이다. 여행안내 책자에 ‘중독성이 강한 섬이니 충분한 시간적 여유를 가지고 들어가라’고 적혀있는 섬. 다이빙, 서핑, 스노클링에 최적의 섬이자 승마나 하이킹도 즐길 수 있는 곳. 무엇보다 이 섬은 브라질 최고의 생태휴양지로 꼽힌다. 자연 환경을 지키기 위한 수많은 법적 규제들이 만들어져 있어 섬의 원주민들은 이 섬을 ‘No의 섬’이라 부를 정도다.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div>
+          </div>
+          <div class="to_do_column">
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_4.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">아르헨티나 이과수폭포</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                  ‘이과수’는 원주민 과라니 족이 붙인 이름으로 ‘큰 물’이라는 뜻. 미국 대통령 부인 엘리너 루즈벨트로 하여금 “불쌍한 나이아가라!”라고 탄식하게 만들고 만, 바로 그 ‘큰 물’이다. 너비 4.5km에 평균낙차 70m. 크고 작은 폭포의 수가 275개에 이른다. 너비와 낙차만을 놓고 본다면 세계에서 가장 큰 폭포다. 브라질 파라나 주의 쿠리치바 근처에서 발원해 수 백 킬로미터를 달려온 이과수 강이 아마존 남부에서 흘러온 파라나 강과 만나면서 폭포가 되어 쏟아져 내린다. 두 강의 큰 낙차와 풍부한 유량이 이토록 거대한 폭포를 만들었는데 인간의 손이 닿지 않은 원시림으로 뒤덮인 주변은 폭포와 삼림과 계곡이 어우러지는 장관을 연출한다.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div> 
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_5.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">페루 마추픽추</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                  발견될 때까지 수풀에 갇힌 채 아무도 그 존재를 몰랐고 공중에서만 볼 수 있다고 하여 우주적 차원의 문명 작품으로까지 불리는 곳. 그러나 분명 잉카의 땅이며, 과거 잉카의 고도인 곳. 제국의 마지막 성전이 벌어지고 그 숨통이 끊어지는 순간을 함께한 곳. 잉카 최후의 요새 마추픽추로 시간을 거슬러 올라가 보자.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div> 
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_6.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">살리네라스 염전</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                  발견될 때까지 수풀에 갇힌 채 아무도 그 존재를 몰랐고 공중에서만 볼 수 있다고 하여 우주적 차원의 문명 작품으로까지 불리는 곳. 그러나 분명 잉카의 땅이며, 과거 잉카의 고도인 곳. 제국의 마지막 성전이 벌어지고 그 숨통이 끊어지는 순간을 함께한 곳. 잉카 최후의 요새 마추픽추로 시간을 거슬러 올라가 보자.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div> 
+          </div>
+          <div class="to_do_column">
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_7.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">와라즈 69호수</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                  페루 북부의 고원도시 와라스에서 출발하는 3박 4일짜리 트레킹으로 우아스카란 국립공원 내에서 말발굽 모양으로 도는 코스다. 세계 자연 유산인 우아스카란 국립공원은 해발고도 4000미터가 넘는 고지에 에메랄드 그린의 호수와 설산이 그림처럼 펼쳐진다. 당나귀에 짐을 싣고 가볍게 걸을 수 있다. 코스 중 가장 높은 곳은 푼타 우니온 고개로 해발고도 4,750미터. 에메랄드 그린 빛깔의 빙하 호수와 성벽처럼 주변을 두른 설산이 360도 전망으로 펼쳐진다.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div> 
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_7.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">와라즈 69호수</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                    페루 북부의 고원도시 와라스에서 출발하는 3박 4일짜리 트레킹으로 우아스카란 국립공원 내에서 말발굽 모양으로 도는 코스다. 세계 자연 유산인 우아스카란 국립공원은 해발고도 4000미터가 넘는 고지에 에메랄드 그린의 호수와 설산이 그림처럼 펼쳐진다. 당나귀에 짐을 싣고 가볍게 걸을 수 있다. 코스 중 가장 높은 곳은 푼타 우니온 고개로 해발고도 4,750미터. 에메랄드 그린 빛깔의 빙하 호수와 성벽처럼 주변을 두른 설산이 360도 전망으로 펼쳐진다.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div> 
+            <div class="item">
+              <div class="picture">
+                <img src="images/trip/bg_trv_7.jpg" alt="">
+              </div>
+              <div class="description">
+                <div class="category">SEE</div>
+                <div class="title">와라즈 69호수</div>
+                <div class="details_wrap">
+                  <div class="intro">
+                    페루 북부의 고원도시 와라스에서 출발하는 3박 4일짜리 트레킹으로 우아스카란 국립공원 내에서 말발굽 모양으로 도는 코스다. 세계 자연 유산인 우아스카란 국립공원은 해발고도 4000미터가 넘는 고지에 에메랄드 그린의 호수와 설산이 그림처럼 펼쳐진다. 당나귀에 짐을 싣고 가볍게 걸을 수 있다. 코스 중 가장 높은 곳은 푼타 우니온 고개로 해발고도 4,750미터. 에메랄드 그린 빛깔의 빙하 호수와 성벽처럼 주변을 두른 설산이 360도 전망으로 펼쳐진다.
+                  </div>
+                  <div class="more_details">
+                    <div class="substitle">위치</div>
+                    <div class="address">Shop G09, 38 - 52 Waterloo Street </div>
+                    <div class="substitle">연락처 </div>
+                    <div class="phone_num">+61 2 8399 1173</div>
+                  </div>
+                </div>
+              </div>
+              <button class="more_button"><img src="images/trip/btn_more.png" alt="더보기 버튼"></button>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_tab_wrap">
+      <div class="main_tab">
+      <!--항공권 예약-->
+      <? include "inc/reservation.html" ?>
+      <!--//항공권 예약-->
+      </div>
+    </div>
+    <div class="other_trip">
+      <p> 진에어는 전문성을 살려 진정한여행 경험을 제공합니다. <br/>
+      꿈꿔온 휴가를 즐길 여행지를결정하시는데 도움이 되도록 영감을 주는 가이드를 전문가가 모아 놓았습니다.  </p>
+  </div> 
+  <!--//컨테이너영역-->
+  <!--푸터영역-->
+  <? include "inc/footer.html" ?>
+  <!--//푸터영역-->
+ </body>
+</html>

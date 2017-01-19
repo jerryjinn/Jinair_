@@ -1,0 +1,42 @@
+<div>
+  <form action="#">
+    <fieldset>
+      <legend>항공권</legend>
+      <div class="trip_type">
+        <input type="radio" name="trip_t" id="round_trip" checked="checked" class="blind">
+        <label for="round_trip">왕복</label>
+        <input type="radio" name="trip_t" id="one_way" class="blind">
+        <label for="one_way">편도</label>
+      </div>
+      <ul class="clearFix">
+        <li><a href="#">보너스 항공권</a></li>
+        <li><a href="#">복수 목적지/스톱오버</a></li>
+      </ul>
+      <div class="airport clearFix">
+        <div class="flight_depart">
+          <label for="flight_depart">출발</label>
+          <input type="text" name="flight_depart" id="flight_depart" >
+        </div>
+        <div class="flight_destination">
+          <label for="flight_destination">도착</label>
+          <input type="text" name="flight_destination" id="flight_destination">
+        </div>
+      </div>
+      <div class="flight_date">
+        <div class="btn_date_picker">
+          <span>출국일</span>
+          <button><span>2017년 1월 1일</span></button>
+        </div>
+        <div class="btn_date_picker">
+          <span>귀국일</span>
+          <button><span>2017년 2월 1일</span></button>
+        </div>
+      </div>
+      <div class="passenger">
+        <span>승객/좌석등급</span>
+        <button><span>1 승객/프리미엄</span></button>
+      </div>
+      <button type="submit">항공편 검색</button>
+    </fieldset>
+  </form>
+</div>

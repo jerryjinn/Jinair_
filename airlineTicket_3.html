@@ -1,0 +1,177 @@
+<? include "inc/top.html" ?>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+  <title>진에어 | 항공편선택</title>
+  <link rel="stylesheet" type="text/css" href="css/airline_ticket_3.css" media="all">
+ </head>  
+ <body>
+  <!--헤더영역-->
+  <? include "inc/header.html" ?>
+  <!--//헤더영역-->
+  <!--컨테이너영역-->
+  <div id="container_wrap">
+    <div id="container">
+      <div class="al_header">
+        <ol class="clearFix">
+          <li><span>1</span>항공편 선택</li>
+          <li><span>2</span>승객 정보 및 서비스</li>
+          <li><span>3</span>확인 및 결제</li>
+        </ol>
+        <h3>승객정보</h3>
+        <p>특별 서비스가 필요 하십니까?</p>
+      </div>
+      <div class="passenger_info clearFix">
+        <div class="passenger_left">
+          <div class="psg_name">
+            <p>성인</p>
+            <p>Miss KIM Hyejin</p>
+          </div>
+          <div class="psg_alert">양식을 작성하시기 바랍니다.</div>
+          <div class="psg_desc">이 승객의 여권에 있는 그대로 모든 세부 정보를 입력 하세요.</div>
+        </div>
+        <div class="passenger_right">
+          <p class="required_input">선택 사항으로 표시되지 않은 모든 항목은 필수입력항목입니다.</p>
+          <form action="#" method="post">
+            <fieldset>
+              <legend></legend>
+              <div class="passenger_title">
+                <select name="passenger_title" id="passenger_title">
+                  <option value="Mr">호칭</option>
+                  <option value="Mr">Mr</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Ms">Ms</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Dr">Dr</option>
+                  <option value="Professor">Professor</option>
+                  <option value="Master">Master</option>
+                </select>
+              </div>
+              <div class="passenger_name">
+                <div class="passenger_name">
+                  <input type="text" name="passenger_name" id="passenger_name_l" placeholder="성">
+                </div>
+                <div class="passenger_name">
+                  <input type="text" name="passenger_name" id="passenger_name" placeholder="이름">
+                </div>
+              </div>
+             <div class="input_details">
+                <p>연락처 정보</p>
+               <p>항공편 변경 사항을 통지해야 할 경우를 대비하여 연락처 세부 정보를 입력하세요.</p>
+             </div>
+              <div class="psg_radio_wrap clearFix">
+                <div class="psg_radio">
+                  <input type="radio" name="psg_contact" id="psg_phone" checked="checked">
+                  <label for="psg_phone">휴대전화</label>
+                </div>
+                <div class="psg_radio">
+                  <input type="radio" name="psg_contact" id="psg_tel">
+                  <label for="psg_tel">자택</label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <div class="contact_num clearFix">
+            <div class="country_num">
+              <select name="country_num" id="country_num">
+                <option value="국가번호">국가번호</option>
+                <option value="대한민국(+82)">대한민국(+82)</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="tel_num">
+              <input type="text" name="tel_num" id="tel_num" placeholder="전화번호">
+            </div>
+          </div>
+          <div class="email_address">
+            <input type="text" name="email_address" id="email_address" placeholder="메일주소" value="KIM@HYEJIN.COM">
+          </div>
+          <div class="new_letter">
+             <p>뉴스레터 및 행사 구독</p>
+             <div class="new_chk_box">
+               <input type="checkbox" name="new_letter" id="new_letter">
+               <label for="new_letter">뉴스레터 - 진에어 프로모션 정보 및 뉴스를 받아보겠습니다.</label>
+             </div>
+          </div>   
+          <button type="submit" class="input_complete">정보 입력 완료</button>
+        </div>
+      </div>
+      <div class="passenger_bottom">
+        <div class="personal_information">
+          <dl class="psn_info_header">
+            <a href="#"><dt>개인 정보 수집 및 사용 동의</dt></a>
+            <dd>진에어는 한국 정부의 방침에 따라 온라인에서 항공편 예약 및 발권 서비스 제공 시 개인정보를 수집하기 전에 이에 대한 고객의 동의를 얻을 의무가 있습니다. 진에어의 개인정보 이용에 대한 아래 고지 사항을 확인하고 동의해 주시기 바랍니다.</dd>
+          </dl>
+          <ul class="psn_info_list">
+            <li>
+              <dl>
+                <a href="#"><dt>개인정보를 수집하고 이용하는 이유는 무엇인가요?</dt></a>
+                <dd>
+                  <p>진에어는 항공편 예약, 발권 및 체크인 목적으로 이용자의 개인 정보를 수집합니다. 진에어는 이용자의 동의가 있거나 법령의 규정에 의한 경우를 제외하고는 아래에서 고지한 범위를 넘어 이용자의 개인 정보를 이용하지 않습니다.</p> 
+                  <ul>
+                    <li>수하물 서비스 제공</li>
+                    <li>우대 고객 및 마일리지 프로그램</li>
+                    <li>고객에게 제공하는 서비스와 관련하여 진에어 제휴사 및/또는 협력사에서 이용 등</li>
+                    <li>체크인 정보를 이용한 고객 식별 등</li>
+                    <li>온라인 체크인 및 기타 관련 서비스 등</li>
+                  </ul>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <a href="#"><dt>개인정보 수집 및 사용 목적</dt></a>
+                <dd>
+                  <p>진에어은 귀하가 사전에 명시적으로 동의하거나 관련법에 규정된 경우를 제외하고, 다음 이외의 목적에는 귀하가 제공하는 개인정보를 사용하지 않습니다.</p>
+                  <ul>
+                    <li>항공편 예약, 발권, 신용카드 결제, 여행 서류(확약서/전자항공권) 이메일 전송 서비스 같은 전반적인 여행 관련 서비스 등</li>
+                    <li>수하물 관련 서비스 제공 등</li>
+                    <li>우대 고객 및 마일리지 프로그램 등</li>
+                    <li>진에어의 홈페이지 및/또는 기타 통신 채널을 통해 이용 가능한 온라인 서비스 사용 등</li>
+                    <li>고객에 제공하는 서비스와 관련하여 진에어의 제휴사 및/또는 협력사에서 이용</li>
+                  </ul>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <a href="#"><dt>개인정보 사용 및 보존 기간</dt></a>
+                <dd>개인정보가 수집 및 처리 등의 목적을 달성하여 더 이상 필요하지 않게 되면 이후 그러한 목적으로 사용되지 않습니다. 단, 분쟁 해결 등의 제한된 목적을 위해 최대 7년간 보관됩니다. 다른 법적 요구 사항에 따라 개인정보를 보존해야 하는 경우, 해당 법적 요구 사항에서 정한 기간 동안에만 개인정보가 보존됩니다.</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개인정보 수집 및 사용에 대한 동의 거절</dt>
+                <dd>귀하는 개인 정보 수집 및 사용에 대한 동의를 거절할 수 있습니다. 그러나 동의하지 않을 경우 항공편 예약 및 기타 온라인 서비스를 처리하지 못할 수 있습니다.</dd>
+              </dl>
+            </li>
+            </ul>
+          <div class="agree_box">
+            <input type="checkbox" name="agree_box" id="agree_box" checked="checked">
+            <label for="agree_box">확인 및 동의 본인은 진에어의 개인 정보 수집 및 사용에 대한 상기 조건을 읽고 이해하였습니다.</label>
+          </div>
+        </div>
+      </div>
+      <div class="std_continue_box">
+        <div class="continue_box std_section_wrap">
+          <div class="date_summary">
+            <ul>
+              <li>출발 2016년 12월 28일 (수요일)</li>
+              <li>귀국 2017년 1월 3일 (화요일) </li>
+            </ul>
+            <p class="price_krw">합계 KRW 1,620,000</p>
+            <a href="#">계속</a>
+          </div>
+        </div>
+        <p class="price_desc">각종 국세, 공항세 및 항공사 부과요금이 포함된 금액입니다. <a href="#">상세 정보 확인</a></p>
+      </div>
+      <a href="#" class="prev_page">새검사시작</a>
+    </div>
+  </div> 
+  <!--//컨테이너영역-->
+  <!--푸터영역-->
+  <? include "inc/footer.html" ?>
+  <!--//푸터영역-->
+ </body>
+</html>

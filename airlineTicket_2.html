@@ -1,0 +1,481 @@
+<? include "inc/top.html" ?>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+  <title>진에어 | 항공편선택</title>
+  <link rel="stylesheet" type="text/css" href="css/airline_ticket_2.css" media="all">
+ </head>  
+ <body>
+  <!--헤더영역-->
+  <? include "inc/header.html" ?>
+  <!--//헤더영역-->
+  <!--컨테이너영역-->
+  <div id="select_ticket container_wrap">
+    <!--항공권 선택 1-->
+    <? include "inc/airline_ticket_1.html" ?>
+    <!--//항공권 선택 1-->
+    <div class="select_ticket_2 std_section_wrap">
+      <div class="std_section">
+        <div class="freight_select">
+          <h3>운임선택</h3>
+          <p>진에어 웹사이트에는 임의로 정한 항공사 순서에 따라 항공편을 표시해 드립니다. 당사 웹사이트는 캐세이패시픽 및 캐세이드래곤 항공편이 우선이며 oneworld 항공편 및 oneworld 제휴사 이외의 타항공사 순으로 표시됩니다.</p>
+        </div>
+        <div class="seat_class">
+          <div class="">
+            <div class="class_sel_wrap clearFix">
+              <div class="class_sel">
+                <div class="card_selected">
+                  선택함
+                </div>
+                <div class="card_contents">
+                  <div class="card_name">
+                    <p>일반석</p>
+                    <strong>Standard</strong>
+                  </div>
+                  <div class="card_li">
+                    <ul>
+                      <li>좌석 <strong>사전 예약</strong></li>
+                      <li><strong>예약 변경 무료</strong></li>
+                      <li><strong>100%​</strong> 아시아 마일즈 적립</li>
+                    </ul>
+                  </div>
+                  <div class="card_more">
+                    <ul>
+                      <li>마일로 승급 불가</li>
+                      <li>클럽 포인트 적립 가능</li>
+                      <li>출발 전 취소 시 KRW100000 부과</li>
+                      <li>출발 후 취소 시 KRW100000 부과</li>
+                      <li>노쇼(no show) 수수료 <strong>면제</strong></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    <p>성인 1인당 최저가격</p>
+                    <p>KRW<strong>1,367,600</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div class="class_sel">
+                <div class="card_selected">
+                  선택함
+                </div>
+                <div class="card_contents">
+                  <div class="card_name">
+                    <p>일반석</p>
+                    <strong>Standard</strong>
+                  </div>
+                  <div class="card_li">
+                    <ul>
+                      <li>좌석 <strong>사전 예약</strong></li>
+                      <li><strong>예약 변경 무료</strong></li>
+                      <li><strong>100%​</strong> 아시아 마일즈 적립</li>
+                    </ul>
+                  </div>
+                  <div class="card_more">
+                    <ul>
+                      <li>마일로 <stong>승급</stong></li>
+                      <li>클럽 포인트 적립 가능</li>
+                      <li>출발 전 취소 시 KRW100000 부과</li>
+                      <li>출발 후 취소 시 KRW100000 부과</li>
+                      <li>노쇼(no show) 수수료 <strong>면제</strong></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    <p>성인 1인당 최저가격</p>
+                    <p>KRW<strong>1,367,600</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="benefit_more">혜택 자세히 보기</button>
+        </div>
+        <div class="box_flight clearFix">
+          <div class="depart_box flight_box_column">
+            <div class="box_header">
+              <div class="flight_date_info clearFix">
+                <h4>출발</h4>
+                <p>12월 28일 (수요일)</p>
+              </div>
+              <div class="filter_select clearFix">
+                <select name="flight_time" id="flight_time">
+                  <option value="출발시간">출발시간</option>
+                  <option value="도착시간">도착시간</option>
+                  <option value="소요시간">소요시간</option>
+                </select>
+                <select name="flight_via" id="flight_via">
+                  <option value="1회 경유">1회 경유</option>
+                  <option value="2회 이상 경유">2회 이상 경유</option>
+                  <option value="모든 항공편">모든 항공편</option>
+                </select> 
+              </div>
+            </div>
+            <div class="box_list">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="return_box flight_box_column">
+            <div class="box_header">
+              <div class="flight_date_info clearFix">
+                <h4>출발</h4>
+                <p>12월 28일 (수요일)</p>
+              </div>
+              <div class="filter_select clearFix">
+                <select name="flight_time" id="flight_time">
+                  <option value="출발시간">출발시간</option>
+                  <option value="도착시간">도착시간</option>
+                  <option value="소요시간">소요시간</option>
+                </select>
+                <select name="flight_via" id="flight_via">
+                  <option value="1회 경유">1회 경유</option>
+                  <option value="2회 이상 경유">2회 이상 경유</option>
+                  <option value="모든 항공편">모든 항공편</option>
+                </select>
+              </div> 
+            </div>
+            <div class="box_list">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="flight_wrap">
+                      <div class="flight_title clearFix">
+                      <p>CX439  &gt;  CX9291 &gt; QR69</p>
+                      </div>
+                      <div class="flight_cotainer">
+                        <p>
+                          <span class="dp_time">13:55</span>
+                          <span class="time_required">소요 시간 <span>25시간 0분</span></span>
+                          <span class="rt_time">06:55+1</span>
+                        </p>
+                        <p>
+                          <span class="dp_contry">ICN</span>
+                          <span class="via_contry">HKG</span>
+                          <span class="rt_counry">FRA</span>
+                        </p>
+                        <p>
+                          <span class="remaining_seat">잔여좌석</span>
+                          <span class="flight_company">CX9291 Qatar Airways</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a> 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="freight">
+          <ul>
+            <li class="freight_condition">
+              <button><span>운임조건</span></button>
+              <ul>
+                <li>운임에 특정 규정이 적용됩니다. 운임 규정 및 조건을 확인하시기 바랍니다</li>
+                <li>이 운임에는 최소/최대 체류 기간 요구 사항이 적용될 수 있습니다. 자세한 사항은 예약 검토 시 확인하실 수 있습니다.</li>
+              </ul>
+            </li>
+            <li class="freight_allowance">
+              <button><span>수하물 허용량</span></button>
+              <ul>
+                <li>수하물 허용량은 여행 목적지 및 MPO 상태에 따라 결정됩니다. 추가 수하물 요금이 적용됩니다. 여기에서 수하물 정보를 확인하시기 바랍니다여기에서 수하물 정보를 확인하시기 바랍니다,  새 창에서 열림. 수하물 허용량에 대한 구체적인 정보는 이 단계 이후 요약에서 확인할 수 있습니다.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="std_continue_box">
+          <div class="continue_box std_section_wrap">
+            <div class="date_summary">
+              <ul>
+                <li>출발 2016년 12월 28일 (수요일)</li>
+                <li>귀국 2017년 1월 3일 (화요일) </li>
+              </ul>
+              <p class="price_krw">합계 KRW 1,620,000</p>
+              <a href="#">계속</a>
+            </div>
+          </div>
+          <p class="price_desc">각종 국세, 공항세 및 항공사 부과요금이 포함된 금액입니다. <a href="#">상세 정보 확인</a></p>
+        </div>
+        <a href="#" class="prev_page">새검사시작</a>
+      </div>
+    </div>
+  </div> 
+
+  <!--//컨테이너영역-->
+  <!--푸터영역-->
+  <? include "inc/footer.html" ?>
+  <!--//푸터영역-->
+ </body>
+</html>

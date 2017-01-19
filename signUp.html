@@ -1,0 +1,70 @@
+
+<? include "inc/top.html" ?>
+  <title>진에어 | 회원가입</title>
+  <link rel="stylesheet" type="text/css" href="css/signUp.css" media="all">
+ </head>  
+ <body>
+  <!--헤더영역-->
+  <? include "inc/header.html" ?>
+  <!--//헤더영역-->
+  <!--컨테이너영역-->
+  <div id="container_wrap">
+    <div id="container">
+      <div class="wrapper">
+        <h3>계정등록</h3>
+      </div>
+      <div class="sign_up_wrap">
+        <div class="sign_up">
+          <h4>가입</h4>
+          <p>가입 절차는 간단합니다. 본 양식을 작성해 주시면 계정이 생성됩니다. 영문으로 작성해주시기 바랍니다.</p>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>회원가입</legend> 
+              <label for="customer_gender">&#42;호칭</label>
+              <div class="select_wrap">
+                <select name="customer_gender" id="customer_gender">
+                  <option value="Mr">Mr</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Ms">Ms</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Dr">Dr</option>
+                  <option value="Professor">Professor</option>
+                  <option value="Master">Master</option>
+                </select>
+              </div>
+              <div class="input_wrap">
+                <label for="customer_last_name">이름&#42;</label>
+                <input type="text" name="customer_last_name" id="customer_last_name" placeholder="이름 입력">
+              </div>
+              <div class="input_wrap">
+                <label for="customer_first_name">성&#42;</label>
+                <input type="text" name="customer_first_name" id="customer_first_name" placeholder="성 입력">
+              </div>
+              <div class="email_wrap">
+                <label for="customer_email">이메일*</label>
+                <input type="text" name="customer_email" id="customer_email" placeholder="이메일 입력">
+              </div>
+              <div class="legal_notice">
+                <input type="checkbox" name="legal_notice_1" id="legal_notice_1">
+                <label for="legal_notice_1">개인 데이터를 사용하여 등록된 고객 계정을 만들고 계정 관련 서비스 메시지를 받아 보겠습니다.  <a href="#">개인정보 취급방침</a> 및 <a href="#">약관과 조건</a>에 동의합니다.개인 정보 수집 및 이용에 관한 <a href="#">고지 내용 및 유의사항</a>을 확인하였으며 이에 동의합니다.</label>
+              </div>
+              <div class="legal_notice">
+                <input type="checkbox" name="legal_notice_2" id="legal_notice_2">
+                <label for="legal_notice_2">캐세이패시픽, 캐세이 홀리데이즈, 드래곤에어, 아시아 마일즈의 여행 및 고객 우대 프로그램과 관련된 행사, 프로모션 정보 및 뉴스를 받아 보겠습니다. 개인 정보 수집 및 이용에 관한 <a href="#">고지 내용 및 유의사항</a>새 창에서 열기을 확인하였으며 이에 동의합니다.</label>
+              </div>
+            </fieldset>
+          </form>
+          <div class="submit_group">
+            <div class="instructions">*필수 항목</div>
+            <button type="submit">제출</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!--//컨테이너영역-->
+  <!--푸터영역-->
+  <? include "inc/footer.html" ?>
+  <!--//푸터영역-->
+ </body>
+</html>

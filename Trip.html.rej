@@ -1,0 +1,17 @@
+diff a/Trip.html b/Trip.html	(rejected hunks)
+@@ -1,4 +1,15 @@
+ <? include "inc/top.html" ?>
++  <script src="http://code.jquery.com/jquery-latest.js"></script>
++    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
++    <script type="text/javascript">
++      $(function(){
++        $(".mySlide_1").bxSlider({auto:true, autoControls:true,pager:true}); //메소드 적용 
++        //auto:true : 자동으로 넘어가라 
++        //autoControls : 재생, 정지 , 기본이 false임 
++        //controls : 전,후페이지 넘김 
++        //pager : 페이지 
++      });
++    </script>
+   <title>진에어 | 여행정보</title>
+   <link rel="stylesheet" type="text/css" href="css/trip.css" media="all">
+  </head>  
