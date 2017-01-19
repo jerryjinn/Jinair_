@@ -13,9 +13,9 @@
 .airline_tk .al_header ol+h3{font-size: 37px;color: #661f43;margin-bottom: 25px;}
 
 /*table - js*/
-table .activeBg {background:#661f43;color: #fff;box-shadow: 0 4px 4px -4px rgba(0,0,0,0.3);border: 1px solid #661f43;}
-table .VerticalLine {border-left: 1px solid #661f43;border-right: 1px solid #661f43;}
-table .HorizonLine{border-top: 1px solid #661f43;border-bottom: 1px solid #661f43;}
+table .activeBg {background:#661f43 !important;color: #fff;box-shadow: 0 4px 4px -4px rgba(0,0,0,0.3);border: 1px solid #661f43 !important;}
+table .VerticalLine {border-left: 1px solid #661f43 !important;border-right: 1px solid #661f43 !important;}
+table .HorizonLine{border-top: 1px solid #661f43 !important;border-bottom: 1px solid #661f43 !important;}
 
 .al_container{background: #ebedec;padding-top: 50px;}
 .al_container table tr{background: #fff;height: 80px;}
@@ -23,9 +23,11 @@ table .HorizonLine{border-top: 1px solid #661f43;border-bottom: 1px solid #661f4
 .al_container table td{padding-left: 20px;}
 .al_container .returning td{background: #ebedec;}
 .al_container .returning th{background: #f7e1ed;}
-.al_container .departing th{border-right: 1px solid #c6c2c1; border-bottom: 1px dotted #fff;background: #f7e1ed;}
-.al_container .departing td{border-right: 1px solid #c6c2c1; border-bottom: 1px solid #c6c2c1;}
+.al_container .departing th{border-top: 1px dotted #fff;background: #f7e1ed;}
+.al_container .departing td{border-left: 1px solid #c6c2c1; border-top: 1px solid #c6c2c1;}
+.al_container .departing td:first-child{border-left: none;}
 .al_container table tr.returning th{border-right: 1px dotted #fff;border-bottom: 1px solid #fff;}
+
 
 .tb_bottom{padding: 22px 0;color:#661f43;font-weight: bold;width: 100%;}
 .tb_bottom a{float: left;	color:#661f43;font-weight: bold;}
