@@ -1,8 +1,8 @@
 <? include "inc/top.html" ?>
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+  <script src="js/airline_ticket.js"></script>
   <script src="js/airline_ticket_2.js"></script>
   <title>진에어 | 항공편선택</title>
+  <link rel="stylesheet" type="text/css" href="css/common_airline_ticket.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/airline_ticket_2.css" media="all">
  </head>  
  <body>
@@ -22,69 +22,73 @@
         </div>
         <div class="seat_class">
           <div class="">
-            <div class="class_sel_wrap clearFix">
-              <div class="class_sel">
-                <div class="card_selected">
-                  선택함
-                </div>
-                <div class="card_contents">
-                  <div class="card_name">
-                    <p>일반석</p>
-                    <strong>Standard</strong>
+            <div class="class_sel_wrap clearFix" data-type="tabmenu">
+              <a href="#">
+                <div class="class_sel">
+                  <div class="selected_click">
+                    <div class="card_selected">선택함</div>
+                    <button class="card_name">
+                      <p>일반석</p>
+                      <strong>Standard</strong>
+                    </button>
                   </div>
-                  <div class="card_li">
-                    <ul>
-                      <li>좌석 <strong>사전 예약</strong></li>
-                      <li><strong>예약 변경 무료</strong></li>
-                      <li><strong>100%​</strong> 아시아 마일즈 적립</li>
-                    </ul>
-                  </div>
-                  <div class="card_more">
-                    <ul>
-                      <li>마일로 승급 불가</li>
-                      <li>클럽 포인트 적립 가능</li>
-                      <li>출발 전 취소 시 KRW100000 부과</li>
-                      <li>출발 후 취소 시 KRW100000 부과</li>
-                      <li>노쇼(no show) 수수료 <strong>면제</strong></li>
-                    </ul>
-                  </div>
-                  <div class="price">
-                    <p>성인 1인당 최저가격</p>
-                    <p>KRW<strong>1,367,600</strong></p>
-                  </div>
-                </div>
-              </div>
-              <div class="class_sel">
-                <div class="card_selected">
-                  선택함
-                </div>
-                <div class="card_contents">
-                  <div class="card_name">
-                    <p>일반석</p>
-                    <strong>Standard</strong>
-                  </div>
-                  <div class="card_li">
-                    <ul>
-                      <li>좌석 <strong>사전 예약</strong></li>
-                      <li><strong>예약 변경 무료</strong></li>
-                      <li><strong>100%​</strong> 아시아 마일즈 적립</li>
-                    </ul>
-                  </div>
-                  <div class="card_more">
-                    <ul>
-                      <li>마일로 <stong>승급</stong></li>
-                      <li>클럽 포인트 적립 가능</li>
-                      <li>출발 전 취소 시 KRW100000 부과</li>
-                      <li>출발 후 취소 시 KRW100000 부과</li>
-                      <li>노쇼(no show) 수수료 <strong>면제</strong></li>
-                    </ul>
-                  </div>
-                  <div class="price">
-                    <p>성인 1인당 최저가격</p>
-                    <p>KRW<strong>1,367,600</strong></p>
+                  <div class="card_contents selectOn">
+                    <div class="card_li">
+                      <ul>
+                        <li>좌석 <strong>사전 예약</strong></li>
+                        <li><strong>예약 변경 무료</strong></li>
+                        <li><strong>100%​</strong> 아시아 마일즈 적립</li>
+                      </ul>
+                    </div>
+                    <div class="card_more">
+                      <ul>
+                        <li>마일로 승급 불가</li>
+                        <li>클럽 포인트 적립 가능</li>
+                        <li>출발 전 취소 시 KRW100000 부과</li>
+                        <li>출발 후 취소 시 KRW100000 부과</li>
+                        <li>노쇼(no show) 수수료 <strong>면제</strong></li>
+                      </ul>
+                    </div>
+                    <div class="price">
+                      <p>성인 1인당 최저가격</p>
+                      <p>KRW<strong>1,367,600</strong></p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
+              <a href="#">
+                <div class="class_sel">
+                  <div class="selected_click">
+                    <div class="card_selected">선택함</div>
+                    <button class="card_name">
+                      <p>프리미엄 일반석</p>
+                      <strong>Flex</strong>
+                    </button>
+                  </div>
+                  <div class="card_contents">
+                    <div class="card_li">
+                      <ul>
+                        <li>좌석 <strong>uiuiuyuytyty</strong></li>
+                        <li><strong>예약 변경 무료</strong></li>
+                        <li><strong>100%​</strong> 아시아 마일즈 적립</li>
+                      </ul>
+                    </div>
+                    <div class="card_more">
+                      <ul>
+                        <li>마일로 승급 불가</li>
+                        <li>클럽 포인트 적립 가능</li>
+                        <li>출발 전 취소 시 KRW100000 부과</li>
+                        <li>출발 후 취소 시 KRW100000 부과</li>
+                        <li>노쇼(no show) 수수료 <strong>면제</strong></li>
+                      </ul>
+                    </div>
+                    <div class="price">
+                      <p>성인 1인당 최저가격</p>
+                      <p>KRW<strong>1,367,600</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <button class="benefit_more">혜택 자세히 보기</button>
@@ -267,7 +271,7 @@
           <div class="return_box flight_box_column">
             <div class="box_header">
               <div class="flight_date_info clearFix">
-                <h4>출발</h4>
+                <h4>도착</h4>
                 <p>12월 28일 (수요일)</p>
               </div>
               <div class="filter_select clearFix">

@@ -74,7 +74,7 @@ $(function(){
     var ts = $(this);
     if(mode == "pc tablet mobile"){
       var selector = "#"+ts.attr("id")+">ul>li>a" + ",.tablet"+" #"+ts.attr("id")+">ul>li>a";
-      console.log(selector);
+      //console.log(selector);
       $(document).on("mouseover focus",selector,function(){
         var myThis = $(this);
         $(this).closest("ul").find("ul:visible").hide()
@@ -110,7 +110,7 @@ $(function(){
     this.bindEvent();
   }
   TabmenuFnc.prototype.bindEvent = function(){
-    console.log(this.myObj + " h3 a, " + this.myObj + " h4 a");
+    //console.log(this.myObj + " h3 a, " + this.myObj + " h4 a");
     $(document).on("click",this.myObj + " h3 button.tab_btn, " + this.myObj + " h4 button.tab_btn",$.proxy(this.tabEvntHnd,this)); // $.proxy( ㅇ ,this);
   };
   TabmenuFnc.prototype.tabEvntHnd = function(e){
