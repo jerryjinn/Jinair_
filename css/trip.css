@@ -36,7 +36,7 @@ img{max-width: 100%,vertical-align: middle;}
 .slideWrap .bx-next{background: url("../images/trip/btn_right_arrow.png") 0 0 no-repeat;right: 0;}
 
 
-.trip_header{background: #ebedec;width: 100%;padding:16px 0 72px 0;}
+.trip_header{background: #ebedec;width: 100%;padding: 16px 0 72px 0;}
 .header_img{background: url(../images/trip/bg_machu.jpg) 0 0 no-repeat;width: 100%;height: 350px;position: relative;}
 .header_img .header_title h3{font-size: 29px;color: #fff;position: absolute;left: 50%;bottom: 50px;margin-left: -70px;}
 .header_img .header_title h3 strong{font-weight: bold;}
@@ -46,8 +46,9 @@ img{max-width: 100%,vertical-align: middle;}
 .header_navigation ul li img{position: absolute;left: 60%;top: -21px;}
 .header_navigation ul li:first-child img{left:20%;}
 .guide_info{background: #ebedec;width: 100%;}
-.guide_info .summary{margin-bottom: 30px;font-size: 14px;text-align: center;}
+.guide_info .summary{padding-bottom: 30px;font-size: 14px;text-align: center;}
 .gallery_container .gallery_info span{font-size: 30px;color: #7d0849;font-weight: bold;}
+.things_to_do{background: #ebedec;}
 .things_to_do .things_header{text-align: center;padding-top: 26px;}
 .things_to_do .things_header h3{font-size: 36px;color: #7d0849;margin-bottom: 20px;}
 .things_to_do .things_header p{font-size: 16px;}
@@ -66,4 +67,24 @@ img{max-width: 100%,vertical-align: middle;}
 .other_trip {font-size: 16px;text-align: center;color: #7d0849;padding: 30px 0}
 
 
+@media (max-width:1024px) {
+	.trip_header{padding-left:30px;padding-right: 30px;}
+	.gallery_img{padding-left:30px;padding-right: 30px;}
+	.things_to_do .things_container .to_do_column{width: 48.25%;}
+	.things_to_do .things_container{padding-left:30px;padding-right: 30px;}
+	.things_to_do .things_container >.item{float: left;}
+	.things_to_do .things_container .to_do_column+.to_do_column+.to_do_column{width: 100%;margin-left: 0;}
+	.things_to_do .things_container .to_do_column+.to_do_column+.to_do_column .item{width:48.25%;float: left;}
+	.things_to_do .things_container .to_do_column+.to_do_column+.to_do_column .item:first-child{margin-right: 3.5%;}
+}
+@media (max-width:767px) {
+	.trip_header{padding-left:15px;padding-right: 15px;}
+	.gallery_img{padding-left:15px;padding-right: 15px;}
+	.gallery_img img{width: 100%;}
+	.things_to_do .things_container{padding-left: 15px;padding-right: 15px;}
+	.things_to_do .things_container .to_do_column{width: 100%;margin-left: 0;}
+	.things_to_do .things_container .to_do_column+.to_do_column+.to_do_column .item{width: 100%;}
+	#container_wrap .main_tab_wrap{margin-top: 0;}
+
+}
 

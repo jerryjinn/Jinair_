@@ -13,9 +13,25 @@
 .reservation_benefit .bnf_title h4{font-size: 29px;color: #7d0849;margin-bottom: 20px;}
 .reservation_benefit .bnf_contents{margin: 0 -12px;}
 .reservation_benefit .bnf_contents ul li{float: left;width: 33.3333%;margin-bottom: 20px;}
-.reservation_benefit .bnf_contents ul li div{background: #fff;height: 170px;margin:0 20px;padding: 20px;}
+.reservation_benefit .bnf_contents ul li div{background: #fff;height: 156px;padding: 20px;margin: 0 20px;}
 .reservation_benefit .bnf_contents ul li div h5{padding-bottom: 7px;border-bottom: 1px solid #c6c2c1;font-size: 19px;color: #7d0849; }
 .reservation_benefit .bnf_contents ul li div p{margin-top: 7px;}
 .lent_contact {margin: 30px 0;}
 .lent_contact h4{font-size: 29px;color: #7d0849;margin-bottom: 21px;}
 .lent_contact p a{color: #7d0849;font-weight: bold;}
+
+@media (max-width:1024px) {
+	#header_top_wrap{height: 43px;}
+	.std_section_wrap{padding: 0 15px;}
+	.lent_int{padding: 0 15px;}
+	.lent_int .section_txt{float: none;width: 100%;}
+	.lent_int .lent_img{float: none;width: 100%;}
+	.reservation_benefit .bnf_contents ul li{width: 100%;float: none;}
+	.reservation_benefit{padding-bottom: 20px;}
+	.reservation_benefit .bnf_contents{margin: 0;}
+	.reservation_benefit .bnf_contents ul li div{margin: 0;height: auto;}
+}
+
+@media (max-width:767px) {
+
+}
