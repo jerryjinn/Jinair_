@@ -23,15 +23,17 @@ $(function(){
 
   /*더보기 버튼*/ 
   $(".seat_class button.benefit_more").on("click",function(){
-    var myReply = $(this).prev("div").parent().find(".card_more");
-    if (myReply.is(":hidden")){
-      $(".seat_class button.benefit_more").removeClass("on");
-      $(this).addClass("on");
-      myReply.slideDown("2000");
-    } else{
-      $(".seat_class button.benefit_more").removeClass("on");
-      $(myReply).slideUp("2000");
-    }
+    
+        var myReply = $(this).prev("div").parent().find(".card_more");
+        var myReply2 = $(this).prev("div").parent().find(".selectActive .card_more");
+        if (myReply2.is(":hidden")){
+          $(".seat_class button.benefit_more").removeClass("on");
+          $(this).addClass("on");
+          myReply.slideDown("2000");
+        } else{
+          $(".seat_class button.benefit_more").removeClass("on");
+          $(myReply).slideUp("2000");
+        }
   });
 
   var class_sel_handler = function(e) {
@@ -39,6 +41,9 @@ $(function(){
       var ts = $(this);
       $(".selected_click+div:visible").hide();
       ts.parent().next().show();
+
+      $(".card_selected").hide();
+      ts.prev().show();
   }
   $(document).on("click",".mobile .class_sel_wrap button",class_sel_handler);
 

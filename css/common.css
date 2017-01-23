@@ -86,7 +86,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header #gnb>ul{width: 100%;max-width: 960px;margin: 0 auto;}
 #header #gnb>ul>li{ float: left;width: 16.6666%;background: url(../images/common/bg_gnb_bar.png) 0 50% no-repeat;}
 #header #gnb>ul>li:first-child{background: none;}
-#header #gnb>ul>li>a{display:block;font-weight: bold;font-size: 15px;height: 50px;line-height: 50px;}
+#header #gnb>ul>li>a{display:block;font-weight: 500;font-size: 15px;height: 50px;line-height: 50px;}
 #header #gnb>ul>li:before{display: inline-block;width: 1px;height: 21px;}
 #header #gnb>ul>li>a:hover, #header #gnb ul li a:focus{border-bottom: 4px solid #661f43;color: #661f43;}
 #gnb>ul>li>ul{display: none;position: absolute;left: 50%;margin-left: -480px;top: 50px;width: 100%;max-width: 960px;height: 215px;z-index: 10;background:#ebedec url(../images/common/bg_gnb_1.jpg) 7px 7px no-repeat;padding-left:34%;padding-top: 30px; border-bottom: 1px solid #d7d7d7;}
@@ -97,6 +97,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #gnb>ul>li+li+li+li+li+li>ul{background-image: url(../images/common/bg_gnb_6.jpg);}
 #gnb>ul>li>ul>li{float: left; text-align: left;width:50%;height: 45px;font-size: 16px;font-weight: 500;}
 #header .dim_gnb{display: none;}
+
 
 
 .sign_in{display: none;}
@@ -290,10 +291,38 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
   #header_top #util_menu ul li,#header_top #util_menu form{display: none;}
   #header_top #util_menu .m_signin_btn{display: block;position: absolute;top: 0; right: 0;z-index: 2;}
   #header_top #util_menu .m_signin_btn:before{content:"";}
+  #header .sign_in{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #ebedec;
+    width: 30%;
+    height: 100%;
+    z-index: 50;
+    border-left: 1px solid #d8d8d8;
+    box-shadow: -1px 0 5px rgba(0,0,0,0.5);
+
+  }
+  #header .mobile_sign_in_close{
+    display: block;
+    position: absolute;
+    left: -36px;
+    top: 3px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #999;
+    background: #f1f1f1;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.8);
+    z-index: 1;
+  }
+  .join_top span{display: block;}
   #header #gnb{
     position: fixed;
     top: 0;
-    left: -80%;
+    left: -100%;
     background: #fff;
     width: 30%;
     height: 100%;
@@ -310,7 +339,7 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
   #header #gnb>ul>li a:hover{border: none;text-decoration: underline;}
   #header #gnb>ul>li>ul{min-width: auto;height: auto;display: block;/*background: none;*/position: static;padding:0;display: none;margin: 0;}
   #gnb>ul>li>ul>li{float: none;background: #ebedec;width: 100%;height: auto;padding: 5px 15px;border-top: 1px solid #fff;}
-  #header_top button.m_btn_gnb{display:inline-block;position: absolute;left: 0;top: 8px;z-index: 49;}
+  #header_top button.m_btn_gnb{display:inline-block;position: absolute;left: 0;top: 8px;z-index: 19;}
   .mobile_gnb_close{
     display: block;
     position: absolute;
@@ -324,7 +353,7 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
     border: 1px solid #d8d8d8;
     border-radius: 3px;
     box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.8);
-    z-index: 49;
+    z-index: 1;
   }
   #header .dim_gnb{position: fixed;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.8);z-index: 20;}
   #container_wrap .main_visual a{margin-left: 5%; }
@@ -345,7 +374,7 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
   #footer .social_icons{position: absolute;top: 70px;left: 0; width: 13%;padding-left: 25px;}
   #footer .social_icons li{float: none;margin-bottom: 20px;}
   #footer .footer_container .footer_links{padding:47px 0 0 0;}
-
+}
 @media (max-width:767px) {
   .col_mobile_1{width: 8.333%;}
   .col_mobile_2{width: 16.666%;}
@@ -361,12 +390,12 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
   .col_mobile_12{width: 100%;}
 
   #header_top_wrap{padding: 0 15px;}
-  #header_top #util_menu .m_signin_btn{text-indent: -9999px;}
-  #header #gnb{width: 200%;}
+  #header_top #util_menu .m_signin_btn{text-indent: -9999px;}
+  #header #gnb{left: -100%; width: 80%;}
   .content_2{padding-top:  20px;}
   #container_wrap #container{padding: 0 15px;}
   #container_wrap .main_visual_wrap{position: relative;}
-  #container_wrap .main_visual a{width: 100%;margin-left: 0;position: absolute;left: 0;bottom: -215px;opacity:1;}
+  #container_wrap .main_visual a{width: 100%;margin-left: 0;position: absolute;left: 0;bottom: -213px;opacity:1;}
   #container_wrap .main_visual:after{content: "";
     display: block;
     width: 100%;
@@ -398,9 +427,9 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
   .main_prm .description{float: none; width: 85%;margin-left: 15%;padding-left:0;}
   .main_prm .description h4{margin-top: 3%;font-size: 19px;}
   .main_prm .description .item{margin-right: 0;}
-  .secondary_prm {float: none;width: 100%;position: relative;margin-bottom: 42px;}
+  .secondary_prm {float: none;width: 100%;height: auto;position: relative;margin-bottom: 42px;padding-top: 10px;}
   .secondary_prm .information{width: 67.625%;}
-  .secondary_prm .information .guide{width: 100%;position: absolute;top: 137px;left: 0;padding-bottom: 6px;border-bottom: 1px solid #c6c2c1;text-align: center;}
+  .secondary_prm .information .guide{width: 100%;position: absolute;bottom:-25%;left: 0;padding-bottom: 6px;border-bottom: 1px solid #c6c2c1;text-align: center;}
   .secondary_prm.even_num .cover_img{float: right;width:  27.375%;margin-right:5%;}
   .secondary_prm.even_num .information{margin-left: 0; width: 67.625%;}
   .service_info a{width: 100%;margin : 0 0 10px 0;}
@@ -424,7 +453,7 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
   #footer .social_icons li{float: left;margin: 0 5%;}
   #footer .footer_message{width: 100%;}
 }
-  @media (max-width:500px){
-    #container_wrap .main_visual a{bottom:-229.5px;}
-    #container_wrap .main_tab_wrap{margin-top: 229.5px;}
-  }
+@media (max-width:500px){
+  #container_wrap .main_visual a{bottom:-226.5px;}
+  #container_wrap .main_tab_wrap{margin-top: 226.5px;}
+}

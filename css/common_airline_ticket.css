@@ -7,9 +7,9 @@
 /*티켓 헤더*/
 .airline_tk .al_header ol{margin: 25px 0 30px 0;}
 .airline_tk .al_header ol li{float: left;font-size: 19px;margin-right: 35px;background: url(../images/airline_ticket/bg_circle_1.png) 0 0 no-repeat;height: 34px;}
-.airline_tk .al_header ol li span{width: 34px;height: 34px;line-height: 34px;text-align: center;display: inline-block;color: #fff;margin-right: 10px;}
+.airline_tk .al_header ol li>span:first-child{width: 34px;height: 34px;line-height: 34px;text-align: center;display: inline-block;color: #fff;margin-right: 10px;}
 .airline_tk .al_header ol li+li,.airline_tk .al_header ol li+li+li{background: url(../images/airline_ticket/bg_circle_2.png) 0 0 no-repeat;}
-.airline_tk .al_header ol li+li span,.airline_tk .al_header ol li+li+li span{color: #4c4c4c;}
+.airline_tk .al_header ol li+li span:first-child,.airline_tk .al_header ol li+li+li span:first-child{color: #4c4c4c;}
 .airline_tk .al_header ol+h3{font-size: 37px;color: #661f43;margin-bottom: 25px;}
 
 /*table - js*/
@@ -18,6 +18,10 @@ table .VerticalLine {border-left: 1px solid #661f43 !important;border-right: 1px
 table .HorizonLine{border-top: 1px solid #661f43 !important;border-bottom: 1px solid #661f43 !important;}
 {cursor:pointer;}
 .al_container{background: #ebedec;padding-top: 50px;}
+.mobile_retuning{display: none;}
+.tb_title{position: relative;}
+.tb_title .retunring_title{display: inline-block;position: absolute;bottom: 14px;left: 78%;}
+.tb_title .departing_title{display: inline-block;position: absolute;bottom:-37px;right: 100px;}
 .al_container table tr{background: #fff;height: 80px;}
 .al_container table th{text-align: center;}
 .al_container table td{padding-left: 20px;}
@@ -49,7 +53,7 @@ table .HorizonLine{border-top: 1px solid #661f43 !important;border-bottom: 1px s
 .continue_box .date_summary a{float: left: ;width:16.145%;height: 45px;line-height: 45px;text-align: center;	color: #fff;position:absolute;right: 1.6%;top:34px; background: #661f43;}
 .std_continue_box .price_desc{margin: 15px 0 25px 0;text-align: right;}
 .std_continue_box .price_desc a{color: #661f43;font-weight: bold;}
-.al_bottom a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;max-width: 960px;margin: 0 auto;}
+a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;max-width: 960px;margin: 0 auto;}
 
 @media(max-width:1024px){
 	.nav_bar .std_section,.airline_tk .al_header,.al_container .std_section,.al_bottom .reference,.al_bottom .continue_bottom_wrap{padding-left: 30px;padding-right: 30px;}
@@ -57,7 +61,7 @@ table .HorizonLine{border-top: 1px solid #661f43 !important;border-bottom: 1px s
 }
 @media(max-width:767px){
 	.nav_bar .std_section,.airline_tk .al_header,.al_container .std_section,.al_bottom .reference,.al_bottom .continue_bottom_wrap{padding-left: 15px;padding-right: 15px;}
-	.continue_box {text-align: center;padding: 20px 10px;height: auto;}
+	.continue_box {text-align: center;padding: 20px 10px;height: auto;margin-bottom: 	30px;}
 	.continue_box .date_summary{}
 	.continue_box .date_summary ul{float: none;}
 	.continue_box .date_summary ul{float: none;}
@@ -65,6 +69,24 @@ table .HorizonLine{border-top: 1px solid #661f43 !important;border-bottom: 1px s
 	.std_continue_box .price_desc{display: none;}
 	.al_bottom a.prev_page{text-align: center;background:none;padding-left: 0;}
 	.depart_box, .return_box{width: 100%;float: none;}
-
-
+	.continue_box .date_summary .price_krw{float: none;padding-right: 0;}
+	.mobile_blind{position: absolute;left: -9999px;}
+	.airline_tk .al_header ol li:first-child span:first-child{color: #fff;}
+	.airline_tk .al_header ol li>span:first-child{color: #4c4c4c;}
+	.airline_tk .al_header ol li{margin-right: 10px;}  
+	
+	.mobile_retuning{display: block;width: 100%;}
+	.mobile_retuning li{}
+	.mobile_retuning li a{width: 16.6666%;float: left;background: #f7e1ed;text-align: center;padding: 5% 0;border-right: 1px dotted #fff;}
+	.mobile_retuning li p{display: block;}
+	.mobile_retuning li a:hover ,.mobile_retuning li a:focus {background: #661f43;}
+	.mobile_retuning li a:hover p,.mobile_retuning li a:focus p{color: #fff;}
+	.mobile_retuning li p+p{font-size: 20px;font-weight: bold;color: #661f43;}
+	.mobile_retuning li p+p+p{font-size: 14px;color: #4c4c4c;}
+	.al_container .departing td{display: none;}
+	.al_container .returning{display: none;}/*thead 부분 */
+	.al_container .departing>tr>th+td.mobile_block{display: block;}
+	.al_container .departing th{cursor:pointer;background: #fff;border-bottom: 1px solid #c6c2c1;}
+	.al_container .departing th:hover,.al_container .departing th:focus{background: #661f43;color: #fff;}
+	
 }

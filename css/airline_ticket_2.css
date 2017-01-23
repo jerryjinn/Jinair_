@@ -8,11 +8,11 @@
 .seat_class{margin-bottom: 20px;}
 .seat_class>a{display: 	inline-block;	}
 .seat_class .class_sel{float: left;width: 49%;border: 1px solid #c6c2c1;box-shadow: 0 4px 4px -4px rgba(0,0,0,0.3);margin-left: 2%;margin-bottom: 15px;}
-.seat_class .class_sel .selected_click .card_name{font-size: 	15px;width: 	98%;background: none;text-align:left;border-top: 7px solid #7f7f7f;padding: 	5px 0;padding-left: 	1%;}
-.class_sel_wrap>a+a>.class_sel>.selected_click>.card_name{margin-left:-2%;}
+.seat_class .class_sel .selected_click .card_name{font-size: 	15px;width: 100%;background: none;text-align:left;border-top: 7px solid #7f7f7f;padding: 	5px 0;padding-left: 	1%;}
 .seat_class .class_sel .card_contents{font-size: 15px;}
 .seat_class a:first-child .class_sel{margin-left:0;}
 .seat_class .class_sel .card_selected{padding: 5px 0;padding-left: 1%;height: 30px;display: none;}
+a.prev_page{padding-bottom: 30px;}
 
 
 /*selectActive*/
@@ -57,7 +57,7 @@
 .flight_wrap .flight_cotainer .rt_time{width: 24%;text-align: right;font-size: 25px;}
 .flight_wrap .flight_cotainer p+p{margin-bottom: 10px;}
 .flight_wrap .flight_cotainer .dp_contry{width: 24%;}
-.flight_wrap .flight_cotainer .via_contry{width: 50%;text-align: center;}
+.flight_wrap .flight_cotainer .via_contry{width: 49%;text-align: center;}
 .flight_wrap .flight_cotainer .rt_counry{width: 24%;text-align: right;}
 .flight_wrap .flight_cotainer .remaining_seat{width: 49%;color: #c2262e;}
 .flight_wrap .flight_cotainer .remaining_seat{padding-left: 15px;background: url(../images/airlineTicket_2/bg_information.png) 0 50% no-repeat;}
@@ -85,13 +85,20 @@
 	.depart_box, .return_box{margin-left: 0;}
 	.seat_class{padding-left: 2%;padding-right: 2%;}
   .seat_class .class_sel{margin: 0;	width: 	100%;float:none;}
+  .seat_class a .class_sel{margin-top: 0 !important;}
   .class_sel_wrap a+a>.selected_click{/*display: none;*/}
   .class_sel_wrap a+a .card_contents{display: none;}
   .seat_class{position: relative;}
   .seat_class .class_sel .selected_click{width: 50%;}
 	.seat_class a+a .class_sel .selected_click{position: absolute;top: 1px;	right: 0;}
+	.class_sel_wrap>a+a>.class_sel>.selected_click>.card_name{margin-left:-2%;}
 	.seat_class .class_sel .card_selected{display:none !important	;}
 	.depart_box, .return_box{width: 100%;float: none;}
 	.flight_wrap .flight_cotainer p{width: 100%;}
+	.seat_class .class_sel .selected_click .card_name{width: 98%;}
+	.seat_class .class_sel .selected_click .card_name{border-right: 1px solid #c6c2c1;}
+	.class_sel_wrap{height: auto;}
+	.box_list ul li a{display: inline-block;}
+
 	
 }

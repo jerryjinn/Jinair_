@@ -54,13 +54,13 @@ $(function(){
   $(window).on("resize",function(){
     var b = $("body");
     var w = $(window).width()+17;
-    if( w >= 1024){
+    if( w > 1024){
       $("#gnb").attr("style","");
       $(".dim_gnb").attr("style","");
       b.attr("class","");
       b.addClass("pc");
 
-    } else if(w >= 767 && w < 1024){
+    } else if(w > 767 && w <= 1024){
       b.attr("class","");
       b.addClass("tablet");
     } else{
@@ -68,6 +68,34 @@ $(function(){
       b.addClass("mobile");
     }   
   });
+
+  /*mobile-login슬라이드*/
+  $.fn.rsLogin = function(opt){
+    var mode = opt.mode;
+    var ts = $(this);
+    if(mode == "pc tablet mobile"){
+      var selector3 = "#"+ts.attr("id")+",.tablet"+" #"+ts.attr("id");
+      $(document).on("mouseleave", selector3, function(){
+        $("ul",this).find("ul:visible").hide()
+        .end().find("a.on").removeClass("on");
+      });
+    }
+    $(document).on("click",".m_signin_btn",function(){
+      $(".sign_in").animate({right:0},500);
+      $(".sign_in").css({"display":"block"});
+      $(".dim_gnb").fadeIn("fast");
+    });
+    $(document).on("click",".mobile_sign_in_close",function(){
+      $(".sign_in").animate({right:"-500px"},500);
+      $(".dim_gnb").fadeOut("fast");
+    });
+  }
+  $(function(){
+      $(window).resize();
+      $("#util_menu").rsLogin({mode:"pc tablet mobile"});
+    });
+
+
   /*반응형 GNB*/
   $.fn.rsGnb = function(opt){
     var mode = opt.mode;
@@ -101,6 +129,8 @@ $(function(){
       $(window).resize();
       $("#gnb").rsGnb({mode:"pc tablet mobile"});
     });
+
+
   /*탭메뉴 */
   function TabmenuFnc(objName,idx){
     this.myObjName = objName;
