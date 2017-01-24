@@ -20,7 +20,7 @@
 .passenger_right input,.passenger_right select{padding-left: 10px;}
 .passenger_right .required_input{font-size: 14px;margin-bottom: 17px;}
 .passenger_right #passenger_title{width: 47.857%;height: 49px;margin-bottom: 10px;}
-.passenger_name .passenger_name input{width: 95.536%;height: 49px;margin-right: 4.464%;margin-bottom: 10px;}
+.passengers_name .passenger_name input{width: 95.536%;height: 49px;margin-right: 4.464%;margin-bottom: 10px;}
 .input_details{margin-bottom: 6px;}
 .input_details p{font-size: 14px;}
 .psg_radio_wrap{margin-bottom: 15px;}
@@ -36,7 +36,7 @@
 .passenger_right button{width: 180px;height: 45px;border: 1px solid #661f43;background: #fff;color: #661f43;margin-bottom: 27px;}
 .passenger_right button:hover, .passenger_right button:focus{background: #661f43;color: #fff;}
 .passenger_bottom{margin-top: 20px;}
-.personal_information .psn_info_header dt{font-size: 24px;color: #661f43;margin-bottom: 5px;}
+.personal_information .psn_info_header dt{font-size: 23px;color: #661f43;margin-bottom: 5px;}
 .personal_information .psn_info_header dd{font-size: 14px;margin-bottom: 15px;}
 .personal_information .psn_info_list{font-size: 14px;}
 .personal_information .psn_info_list>li{border-top: 1px solid #c6c2c1;padding: 17px 30px;color: #661f43;position: relative;}
@@ -62,7 +62,28 @@ top:11px;left: 0;font-size: 25px;}
 .std_continue_box .continue_box .date_summary ul{float: left;font-size: 14px;font-weight: bold;	padding-bottom:3px;float: left;}
 .std_continue_box .continue_box .date_summary ul li {margin-bottom: 5px;}
 .std_continue_box .continue_box .date_summary .price_krw{float: right;padding-right: 18%;font-size: 30px;color: #661f43;}
-.std_continue_box .continue_box .date_summary a{float: left: ;width:16.145%;height: 45px;line-height: 45px;text-align: center;	color: #fff;position:absolute;right: 1.6%;top:34px; background: #661f43;}
+.std_continue_box .continue_box .date_summary a{float: left: ;width:16.145%;height: 45px;line-height: 45px;text-align: center;	color: #fff;position:absolute; right: 1.7%;background: #661f43;}
 .std_continue_box .price_desc{margin: 15px 0 25px 0;text-align: right;}
 .std_continue_box .price_desc a{color: #661f43;font-weight: bold;}
- a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;}
+a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;}
+
+@media(max-width: 1024px){
+	.passenger_info .passenger_left,.passenger_info .passenger_right{float: none;width: 100%}
+	.passenger_info .passenger_right{padding:0 2.604%;}
+	.passenger_right #passenger_title{width: 30%;	}
+	.passengers_name .passenger_name input{float: left;width: 35%;}
+	.passengers_name .passenger_name:first-child input{margin-right: 	1.785%;}
+	.passengers_name .passenger_name input#passenger_name_2{width: 58%;}
+
+}
+@media(max-width: 768px){
+	#container_wrap #container{position: 	10px; }
+	.passenger_right #passenger_title{width: 100%;float: none;}
+	.passenger_right{margin:0;}
+	.passengers_name .passenger_name input{width: 100% !important	;float: none;}
+	.contact_num .country_num select{width: 100%;margin-bottom: 10px;}
+	.contact_num .tel_num input{width: 100%;}
+	.email_address input{width: 100%;	}
+
+
+}

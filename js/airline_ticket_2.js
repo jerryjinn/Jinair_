@@ -45,7 +45,7 @@ $(function(){
       $(".card_selected").hide();
       ts.prev().show();
   }
-  $(document).on("click",".mobile .class_sel_wrap button",class_sel_handler);
+  $(document).on("click",".mobile .class_sel_wrap .card_name",class_sel_handler);
 
   /**/
   
@@ -54,7 +54,6 @@ $(function(){
     var mySelected = $(".card_selected", this)
     $(".class_sel").css({"margin-top":"30px"});
     $(".class_sel",this).css({"margin-top":0});
-
     $(".card_selected:visible").hide();
     $(".card_selected",this).show();
     $(".class_sel_wrap a.selectActive").removeClass('selectActive');

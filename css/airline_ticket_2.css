@@ -8,7 +8,9 @@
 .seat_class{margin-bottom: 20px;}
 .seat_class>a{display: 	inline-block;	}
 .seat_class .class_sel{float: left;width: 49%;border: 1px solid #c6c2c1;box-shadow: 0 4px 4px -4px rgba(0,0,0,0.3);margin-left: 2%;margin-bottom: 15px;}
-.seat_class .class_sel .selected_click .card_name{font-size: 	15px;width: 100%;background: none;text-align:left;border-top: 7px solid #7f7f7f;padding: 	5px 0;padding-left: 	1%;}
+.seat_class .class_sel .selected_click .card_name{display: inline-block;font-size: 	15px;width: 100%;background: none;text-align:left;border-top: 7px solid #7f7f7f;padding: 	5px 0;padding-left: 	1%;}
+.class_sel_wrap a:first-child .class_sel .card_selected{display: block;}
+.class_sel_wrap a+a .class_sel{/*margin-top: 30px;*/}
 .seat_class .class_sel .card_contents{font-size: 15px;}
 .seat_class a:first-child .class_sel{margin-left:0;}
 .seat_class .class_sel .card_selected{padding: 5px 0;padding-left: 1%;height: 30px;display: none;}
@@ -16,7 +18,7 @@ a.prev_page{padding-bottom: 30px;}
 
 
 /*selectActive*/
-.class_sel_wrap a.selectActive .card_name{background:#661f43 !important	; color: #fff; }
+.class_sel_wrap a.selectActive .card_name{background:#661f43 !important	; color: #fff;}
 .class_sel_wrap a.selectActive .card_selected{background:#661f43; color: #fff;}
 /*.class_sel_wrap .on{background: #661f43;	color: #fff; border: 1px solid #661f43;}*/
 .card_name strong{font-size: 20px;font-weight: bold;}
@@ -83,7 +85,7 @@ a.prev_page{padding-bottom: 30px;}
 @media (max-width:767px) {
 	.freight_select,.box_flight,.freight{padding-left: 15px;padding-right: 15px;}
 	.depart_box, .return_box{margin-left: 0;}
-	.seat_class{padding-left: 2%;padding-right: 2%;}
+	.seat_class{padding-left: 15px;padding-right: 15px;}
   .seat_class .class_sel{margin: 0;	width: 	100%;float:none;}
   .seat_class a .class_sel{margin-top: 0 !important;}
   .class_sel_wrap a+a>.selected_click{/*display: none;*/}
@@ -95,7 +97,7 @@ a.prev_page{padding-bottom: 30px;}
 	.seat_class .class_sel .card_selected{display:none !important	;}
 	.depart_box, .return_box{width: 100%;float: none;}
 	.flight_wrap .flight_cotainer p{width: 100%;}
-	.seat_class .class_sel .selected_click .card_name{width: 98%;}
+	.seat_class .class_sel .selected_click .card_name{width: 100%;}
 	.seat_class .class_sel .selected_click .card_name{border-right: 1px solid #c6c2c1;}
 	.class_sel_wrap{height: auto;}
 	.box_list ul li a{display: inline-block;}
