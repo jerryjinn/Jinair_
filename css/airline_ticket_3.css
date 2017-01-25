@@ -2,11 +2,12 @@
 
 /*티켓 헤더*/
 .al_header{border-bottom: 1px solid #c6c2c1;}
-.al_header ol{margin: 25px 0 30px 0;}
-.al_header ol li,.al_header ol li+li{float: left;font-size: 19px;margin-right: 35px;height: 34px;background: url(../images/airline_ticket/bg_circle_1.png) 0 0 no-repeat;}
-.al_header ol li span{width: 34px;height: 34px;line-height: 34px;text-align: center;display: inline-block;margin-right: 10px;color: #fff;}
-.airline_tk .al_header ol li+li+li{background: url(../images/airline_ticket/bg_circle_2.png) 0 0 no-repeat;}
-.airline_tk .al_header ol li+li+li span{color: #4c4c4c;background: #4c4c4c;}
+.al_header ol{padding: 25px 0 30px 0;}
+.al_header ol>li{float: left;font-size: 19px;margin-right: 35px;height: 34px;}
+.al_header ol>li:first-child,.al_header ol li:first-child+li{background: url(../images/airline_ticket/bg_circle_1.png) 0 0 no-repeat;}
+.al_header ol>li>span:first-child{width: 34px;height: 34px;line-height: 34px;text-align: center;display: inline-block;margin-right: 10px;color: #fff;}
+.al_header>ol>li:first-child+li+li{background: url(../images/airline_ticket/bg_circle_2.png) 0 0 no-repeat;}
+.al_header>ol>li:first-child+li+li>span{color: #4c4c4c;}
 .al_header ol+h3{font-size: 37px;color: #661f43;margin-bottom: 5px;}
 .al_header p{color: #661f43;margin-bottom: 25px;}
 .passenger_info{margin-top: 25px;border-bottom: 1px solid #c6c2c1;}
@@ -57,16 +58,16 @@ top:11px;left: 0;font-size: 25px;}
 
 
 /*continue_box */
-.std_continue_box .continue_box{background: #ebedec;height: 116px;position: relative;padding:35px 1.6%;margin-top: 40px;}
-.std_continue_box .continue_box{background: #ebedec;height: 116px;position: relative;padding: 35px 1.6%;margin-top: 40px;}
-.std_continue_box .continue_box .date_summary ul{float: left;font-size: 14px;font-weight: bold;	padding-bottom:3px;float: left;}
-.std_continue_box .continue_box .date_summary ul li {margin-bottom: 5px;}
-.std_continue_box .continue_box .date_summary .price_krw{float: right;padding-right: 18%;font-size: 30px;color: #661f43;}
-.std_continue_box .continue_box .date_summary a{float: left: ;width:16.145%;height: 45px;line-height: 45px;text-align: center;	color: #fff;position:absolute; right: 1.7%;background: #661f43;}
+.continue_bottom_wrap{margin: 0 auto;max-width: 960px;margin-bottom: 30px;}
+.continue_box{background: #ebedec;height: 116px;position: relative;padding:35px 1.6%;margin-top: 40px;}
+.continue_box .date_summary ul{float: left;font-size: 14px;font-weight: bold;	padding-bottom:3px;float: left;}
+.continue_box .date_summary ul li {margin-bottom: 5px;}
+.continue_box .date_summary .price_krw{float: right;padding-right: 18%;font-size: 30px;color: #661f43;}
+.continue_box .date_summary a{float: left: ;width:16.145%;height: 45px;line-height: 45px;text-align: center;	color: #fff;position:absolute;right: 1.6%;top:34px; background: #661f43;}
 .std_continue_box .price_desc{margin: 15px 0 25px 0;text-align: right;}
 .std_continue_box .price_desc a{color: #661f43;font-weight: bold;}
-a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;}
-
+a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;max-width: 960px;margin: 0 auto;}
+a.prev_page:hover{text-decoration: underline;}
 @media(max-width: 1024px){
 	.passenger_info .passenger_left,.passenger_info .passenger_right{float: none;width: 100%}
 	.passenger_info .passenger_right{padding:0 2.604%;}
@@ -78,12 +79,25 @@ a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-heig
 }
 @media(max-width: 768px){
 	#container_wrap #container{position: 	10px; }
+	.al_header ol+h3{font-size: 27px;}
+	.al_header ol li>.mobile_blind{position: absolute;left:-9999px;}
+	.al_header ol li{margin-right: 5px;font-size: 15px;}
 	.passenger_right #passenger_title{width: 100%;float: none;}
 	.passenger_right{margin:0;}
 	.passengers_name .passenger_name input{width: 100% !important	;float: none;}
 	.contact_num .country_num select{width: 100%;margin-bottom: 10px;}
 	.contact_num .tel_num input{width: 100%;}
 	.email_address input{width: 100%;	}
+	/*continue box*/
+	.continue_box {text-align: center;padding: 20px 10px;height: auto;margin-bottom: 	30px;}
+	.continue_box .date_summary ul{float: none;}
+	.continue_box .date_summary ul{float: none;}
+	.continue_box .date_summary a{margin: 0 auto;width: 94%;position: static;display: block;margin-top: 10px;}
+	.std_continue_box .price_desc{display: none;}
+	 a.prev_page{margin-left: 30%;}
+	.depart_box, .return_box{width: 100%;float: none;}
+	.continue_box .date_summary .price_krw{float: none;padding-right: 0;font-size: 25px;}
+	.mobile_blind{position: absolute;left: -9999px;}
 
 
 }

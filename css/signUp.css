@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-.wrapper{margin-top: 15px;}
+.wrapper{padding-top: 15px;}
 .wrapper h3{font-size: 36px;color: #7d0849;padding-bottom: 31px;border-bottom: 1px solid #c6c2c1;}
 .sign_up_wrap{width: 100%;}
 .sign_up{max-width: 480px;margin: 0 auto;}

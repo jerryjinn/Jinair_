@@ -59,25 +59,27 @@ a.prev_page:hover{text-decoration: underline;}
 	.nav_bar .std_section,.airline_tk .al_header,.al_container .std_section,.al_bottom .reference,.al_bottom .continue_bottom_wrap{padding-left: 30px;padding-right: 30px;}
 
 }
-@media(max-width:767px){
+@media(max-width:768px){
 	.nav_bar .std_section,.airline_tk .al_header,.al_bottom .reference,.al_bottom .continue_bottom_wrap{padding-left: 15px;padding-right: 15px;}
 	.al_container .std_section{padding-left: 0;	padding-right: 0;	}
+	/*continue box*/
 	.continue_box {text-align: center;padding: 20px 10px;height: auto;margin-bottom: 	30px;}
-	.continue_box .date_summary{}
 	.continue_box .date_summary ul{float: none;}
 	.continue_box .date_summary ul{float: none;}
 	.continue_box .date_summary a{margin: 0 auto;width: 94%;position: static;display: block;margin-top: 10px;}
 	.std_continue_box .price_desc{display: none;}
-	.al_bottom a.prev_page{text-align: center;background:none;padding-left: 0;}
+	.al_bottom a.prev_page{margin-left: 30%;}
 	.depart_box, .return_box{width: 100%;float: none;}
-	.continue_box .date_summary .price_krw{float: none;padding-right: 0;}
+	.continue_box .date_summary .price_krw{float: none;padding-right: 0;font-size: 25px;}
 	.mobile_blind{position: absolute;left: -9999px;}
+
+
+	.airline_tk .al_header ol+h3{font-size: 27px;}
 	.airline_tk .al_header ol li:first-child span:first-child{color: #fff;}
 	.airline_tk .al_header ol li>span:first-child{color: #4c4c4c;}
-	.airline_tk .al_header ol li{margin-right: 10px;}  
+	.airline_tk .al_header ol li{margin-right: 5px;font-size: 15px;}  
 	
 	.mobile_retuning{display: block;width: 100%;}
-	.mobile_retuning li{}
 	.mobile_retuning li a{width: 16.6666%;float: left;background: #f7e1ed;text-align: center;padding: 5% 0;border-right: 1px dotted #fff;}
 	.mobile_retuning li p{display: block;}
 	.mobile_retuning li a:hover ,.mobile_retuning li a:focus {background: #661f43;}

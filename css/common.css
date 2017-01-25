@@ -99,7 +99,7 @@ iframe{border:none;}
 #gnb>ul>li>ul>li>a:hover,#gnb>ul>li>ul>li>a:focus{text-decoration: underline !important;}
 #header .dim_gnb{display: none;}
 
-
+  
 
 .sign_in{display: none;}
 
@@ -149,9 +149,6 @@ iframe{border:none;}
 .std_section_wrap{width: 100%;}
 .std_section{max-width: 960px;margin: 0 auto;}
 
-/*컨테이너 wrap*/
-.wrapper{margin-top: 15px;border-bottom: 1px solid #c6c2c1;padding-bottom: 25px;}
-.wrapper h3{font-size: 36px;color: #661f43;}
 
 
 /*컨테이너*/
@@ -289,6 +286,7 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
   #header_top .pc_logo{display: none;}
   #header_top .m_logo{display: block !important;margin: 0 auto;}
   #header_top #util_menu {display: block;padding: 0;}
+  #header_top #util_menu ul{display: inline;}
   #header_top #util_menu ul li,#header_top #util_menu form{display: none;}
   #header_top #util_menu .m_signin_btn{display: block;position: absolute;top: 0; right: 0;z-index: 2;}
   #header_top #util_menu .m_signin_btn:before{content:"";}
@@ -376,7 +374,7 @@ top: 6px;right: -19px;background: url(../images/main/bg_air.png) 0 0 no-repeat;}
   #footer .social_icons li{float: none;margin-bottom: 20px;}
   #footer .footer_container .footer_links{padding:47px 0 0 0;}
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
   .col_mobile_1{width: 8.333%;}
   .col_mobile_2{width: 16.666%;}
   .col_mobile_3{width: 24.999%;}

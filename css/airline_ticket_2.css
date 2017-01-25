@@ -86,8 +86,20 @@ a.prev_page{padding-bottom: 30px;}
 		.class_sel_wrap a .card_contents{display:block !important;}
 }
 @media (max-width:767px) {
+	.continue_box {text-align: center;padding: 20px 10px;height: auto;margin-bottom: 	30px;}
+	.continue_box .date_summary ul{float: none;}
+	.continue_box .date_summary ul{float: none;}
+	.continue_box .date_summary a{margin: 0 auto;width: 94%;position: static;display: block;margin-top: 10px;}
+	.std_continue_box .price_desc{display: none;}
+	a.prev_page{margin-left: 30%;}
+	.depart_box, .return_box{width: 100%;float: none;}
+	.continue_box .date_summary .price_krw{float: none;padding-right: 0;font-size: 25px;}
+	.mobile_blind{position: absolute;left: -9999px;}
 	.freight_select,.box_flight,.freight{padding-left: 15px;padding-right: 15px;}
-	.depart_box, .return_box{margin-left: 0;}
+	.freight_select h3{font-size: 27px;}
+	.box_header .flight_date_info {font-size: 15px;margin-bottom: 10px;}
+	.filter_select{margin-bottom: 10px;}
+	.depart_box, .return_box{margin-left: 0;margin-bottom: 25px;}
 	.seat_class{padding-left: 15px;padding-right: 15px;}
   .seat_class .class_sel{margin: 0;	width: 	100%;float:none;border:none;}
   .seat_class a .class_sel{margin-top: 0 !important;}
@@ -101,10 +113,11 @@ a.prev_page{padding-bottom: 30px;}
 	.seat_class .class_sel .card_selected{display:none !important;}
 	.depart_box, .return_box{width: 100%;float: none;}
 	.flight_wrap .flight_cotainer p{width: 100%;}
-	.seat_class .class_sel .selected_click .card_name{width: 100%;}
-	.seat_class .class_sel .selected_click .card_name{border-left:1px solid #c6c2c1;}
+	.seat_class .class_sel .selected_click .card_name{width: 100%;border-left:1px solid #c6c2c1;font-size: 14px;}
+	.seat_class .class_sel .selected_click .card_name strong{font-size: 19px;}
 	.class_sel_wrap>a+a>.class_sel>.selected_click>.card_name{border-right:1px solid #c6c2c1;}
 	.class_sel_wrap{height: auto;}	
+	.continue_box .date_summary .price_krw{font-size: 25px;}
 }
 @media (max-width:400px){
 		.flight_wrap .flight_cotainer .dp_time, .flight_wrap .flight_cotainer .rt_time{font-size: 17px;	}
