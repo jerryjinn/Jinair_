@@ -47,7 +47,7 @@ $(function(){
   }
   $(document).on("click",".mobile .class_sel_wrap .card_name",class_sel_handler);
 
-  /**/
+  /*선택메뉴 탭*/
   
   $(".class_sel_wrap a").on("click",function(e){
     e.preventDefault();
@@ -59,4 +59,28 @@ $(function(){
     $(".class_sel_wrap a.selectActive").removeClass('selectActive');
     $(this).addClass("selectActive");      
   });
+    
+    $(".box_list.departing_box ul li a").on("click",function(e){
+        e.preventDefault();
+        var ts = $(".box_list.departing_box ul li a");
+        if(!$(this).hasClass("activeFocus")){
+          ts.removeClass("activeFocus");
+          $(this).addClass("activeFocus");
+        } else {
+          ts.removeClass("activeFocus");
+        }       
+    });
+    $(".box_list.retuning_box ul li a").on("click",function(e){
+        e.preventDefault();
+        var ts = $(".box_list.retuning_box ul li a");
+        if(!$(this).hasClass("activeFocus")){
+          ts.removeClass("activeFocus");
+          $(this).addClass("activeFocus");
+        } else {
+          ts.removeClass("activeFocus");
+        }       
+    });
+
+
+
 });

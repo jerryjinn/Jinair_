@@ -50,3 +50,4 @@ table .HorizonLine{border-top: 1px solid #661f43 !important;border-bottom: 1px s
 .al_bottom .std_continue_box .price_desc{margin: 15px 0 25px 0;text-align: right;}
 .al_bottom .std_continue_box .price_desc a{color: #661f43;font-weight: bold;}
 .al_bottom a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;max-width: 960px;margin: 0 auto;}
+.al_bottom a.prev_page:hover{text-decoration: underline;}

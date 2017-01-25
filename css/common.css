@@ -25,7 +25,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 *:after,*:before {
     box-sizing: border-box;
 }
-
+iframe{border:none;}
 
 /*font-icon*/
 @font-face {
@@ -88,7 +88,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header #gnb>ul>li:first-child{background: none;}
 #header #gnb>ul>li>a{display:block;font-weight: 500;font-size: 15px;height: 50px;line-height: 50px;}
 #header #gnb>ul>li:before{display: inline-block;width: 1px;height: 21px;}
-#header #gnb>ul>li>a:hover, #header #gnb ul li a:focus{border-bottom: 4px solid #661f43;color: #661f43;}
+#header #gnb>ul>li>a:hover, #header #gnb ul>li>a:focus{border-bottom: 4px solid #661f43;color: #661f43;}
 #gnb>ul>li>ul{display: none;position: absolute;left: 50%;margin-left: -480px;top: 50px;width: 100%;max-width: 960px;height: 215px;z-index: 10;background:#ebedec url(../images/common/bg_gnb_1.jpg) 7px 7px no-repeat;padding-left:34%;padding-top: 30px; border-bottom: 1px solid #d7d7d7;}
 #gnb>ul>li+li>ul{background-image: url(../images/common/bg_gnb_2.jpg);}
 #gnb>ul>li+li+li>ul{background-image: url(../images/common/bg_gnb_3.jpg);}
@@ -96,6 +96,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #gnb>ul>li+li+li+li+li>ul{background-image: url(../images/common/bg_gnb_5.jpg);}
 #gnb>ul>li+li+li+li+li+li>ul{background-image: url(../images/common/bg_gnb_6.jpg);}
 #gnb>ul>li>ul>li{float: left; text-align: left;width:50%;height: 45px;font-size: 16px;font-weight: 500;}
+#gnb>ul>li>ul>li>a:hover,#gnb>ul>li>ul>li>a:focus{text-decoration: underline !important;}
 #header .dim_gnb{display: none;}
 
 

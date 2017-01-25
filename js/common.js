@@ -1,3 +1,22 @@
+
+/*
+  *@addEvnt(evObj,evName,evH) : 이벤트 등록 메서드
+  *@evObj{object} : 이벤트 대상
+  *@evName{string} : 이벤트 명
+  *@evH{fuction} : 이벤트 핸들러
+
+*/
+function addEvnt(evObj,evName,evH){
+    var arrEvnt = evName.split(" ");
+    //console.log(arrEvnt);
+    for(var i =0; i < arrEvnt.length; i++){
+      if(document.addEventListener){
+        evObj.addEventListener(arrEvnt[i], evH );
+      }else { //ie8이하
+        evObj.attachEvent("on" + arrEvnt[i], evH);
+    }
+  }   
+}
 $(function(){
 
 
@@ -45,6 +64,53 @@ $(function(){
   });
 
    /*placeholder사라짐*/
+
+    /*로그인 유효성 검사*/
+    var frm_log = document.querySelector(".login_wrap form");
+    function loginAlt(a,b){
+      alert("로그인 정보가 일치하지 않습니다.");
+      a.value = "";
+      b.value = "";
+      a.focus();
+    }
+
+    function chkLogin(e){
+      e.preventDefault();//액션페이지로 이동안하게 막아줌 
+      //alert(1343);
+      var reg_id = /^[a-z]{1}\w{7,11}$/g;
+      var reg_pw= /^\w{6,12}$/g;
+      var id_1 = "abcde2016";
+      var pw_1 = "1234567";
+      var inp_id = frm_log.user_id;
+      var inp_pw = frm_log.user_pw;
+      
+      var result_id = reg_id.exec(inp_id.value);
+      var result_pw = reg_pw.exec(inp_pw.value);
+      // !(result_id && result_pw)
+      if(result_id == null || result_pw == null){
+        if(result_id == null ){
+          alert("아이디 형식이 잘못되었습니다.");
+          inp_id.value = "";
+          inp_id.focus(); 
+        } else if (result_pw == null){
+          alert("비밀번호 형식이 잘못되었습니다.");
+          inp_pw.value = "";
+          inp_pw.focus(); 
+        }
+      return false;
+      }
+      if(inp_id.value == id_1){
+        if(inp_pw.value != pw_1){
+          loginAlt(inp_id,inp_pw);
+          return false;
+        }
+      } else {
+        loginAlt(inp_id,inp_pw);
+        return false;
+      }
+      frm_log.submit();
+    }
+    addEvnt(frm_log,"submit", chkLogin);
 
 
   /*

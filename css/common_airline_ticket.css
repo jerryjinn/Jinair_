@@ -44,7 +44,7 @@ table .HorizonLine{border-top: 1px solid #661f43 !important;border-bottom: 1px s
 .tb_bottom p{float: right;	display: inline-block;background: url(../images/airline_ticket/bg_tr.png) 0 0 no-repeat;padding-left:20px;}
 .al_bottom .reference{padding:20px 0 7px 0;border-bottom:1px solid #c6c2c1;max-width: 960px;margin: 0 auto;}
 .al_bottom .reference h3{color: #661f43;font-weight: bold;margin-bottom: 13px;}
-.al_bottom .reference ul li{padding-left:8px;background: url(../images/airline_ticket/bullet_circle.png) 0 center no-repeat;margin-bottom: 18px;}
+.al_bottom .reference ul li{padding-left:8px;background: url(../images/airline_ticket/bullet_circle.png) 0 6px no-repeat;margin-bottom: 18px;}
 .continue_bottom_wrap{margin: 0 auto;max-width: 960px;margin-bottom: 30px;}
 .continue_box{background: #ebedec;height: 116px;position: relative;padding:35px 1.6%;margin-top: 40px;}
 .continue_box .date_summary ul{float: left;font-size: 14px;font-weight: bold;	padding-bottom:3px;float: left;}
@@ -54,18 +54,19 @@ table .HorizonLine{border-top: 1px solid #661f43 !important;border-bottom: 1px s
 .std_continue_box .price_desc{margin: 15px 0 25px 0;text-align: right;}
 .std_continue_box .price_desc a{color: #661f43;font-weight: bold;}
 a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;max-width: 960px;margin: 0 auto;}
-
-@media(max-width:1024px){
+a.prev_page:hover{text-decoration: underline;}
+@media(max-width:1024px){ 
 	.nav_bar .std_section,.airline_tk .al_header,.al_container .std_section,.al_bottom .reference,.al_bottom .continue_bottom_wrap{padding-left: 30px;padding-right: 30px;}
 
 }
 @media(max-width:767px){
-	.nav_bar .std_section,.airline_tk .al_header,.al_container .std_section,.al_bottom .reference,.al_bottom .continue_bottom_wrap{padding-left: 15px;padding-right: 15px;}
+	.nav_bar .std_section,.airline_tk .al_header,.al_bottom .reference,.al_bottom .continue_bottom_wrap{padding-left: 15px;padding-right: 15px;}
+	.al_container .std_section{padding-left: 0;	padding-right: 0;	}
 	.continue_box {text-align: center;padding: 20px 10px;height: auto;margin-bottom: 	30px;}
 	.continue_box .date_summary{}
 	.continue_box .date_summary ul{float: none;}
 	.continue_box .date_summary ul{float: none;}
-	.continue_box .date_summary a{margin: 0 auto;width: 94%;position: static;display: inline-block;margin-top: 10px;}
+	.continue_box .date_summary a{margin: 0 auto;width: 94%;position: static;display: block;margin-top: 10px;}
 	.std_continue_box .price_desc{display: none;}
 	.al_bottom a.prev_page{text-align: center;background:none;padding-left: 0;}
 	.depart_box, .return_box{width: 100%;float: none;}
@@ -86,7 +87,15 @@ a.prev_page{display: block;font-size: 14px;color: #661f43;height: 30px;line-heig
 	.al_container .departing td{display: none;}
 	.al_container .returning{display: none;}/*thead 부분 */
 	.al_container .departing>tr>th+td.mobile_block{display: block;}
-	.al_container .departing th{cursor:pointer;background: #fff;border-bottom: 1px solid #c6c2c1;}
-	.al_container .departing th:hover,.al_container .departing th:focus{background: #661f43;color: #fff;}
-	
+	.al_container .departing th{cursor:pointer;background: #fff;border-bottom: 1px solid #c6c2c1;height: 	60px;}
+	.al_container .departing th:hover{background: #661f43;color: #fff;}
+	.al_container .departing th:focus{background: #661f43 !important;color: #fff !important;}
+	.al_container table tr{height: 	60px;}
+	.departing th .month{font-size: 14px;color: #4c4c4c;font-weight: bold;}
+	.departing th .date{font-size: 20px;font-weight: bold;color: #661f43;}
+	.departing th .day{}
+	.al_container .departing th:hover .month, .al_container .departing th:focus .month{color: #fff;}
+	.al_container .departing th:hover .date, .al_container .departing th:focus .date{color: #fff;}
+	.tb_bottom{padding: 22px 15px;}
+	.al_bottom .reference ul li{background-position: 	0 3px;}
 }
