@@ -1,1 +1,19 @@
 @charset "utf-8";
+
+.box{margin:0 auto;max-width:100%;}
+.box img{max-width:960px;}
+.box p{background:#661f43;color: #fff;width: 404px;height: 45px;line-height: 45px;padding: 0 10px; margin-top: 53px;float: left;}
+.box p .name_selected{float: left;font-weight: 600;font-size: 15px;}
+.box p .seat_selected{float: right;}
+button.btnCloseLayer{font-size: 25px;font-weight: bold;background: none;color: #661f43;position: absolute;top: 2px;right:2px;border: 1px solid #c6c2c1;padding: 2px 5px;}
+
+@media(max-width:1024px){
+	.box p{float: none;margin: 0 auto;}
+	.box img{float: none;}
+}
+@media(max-width:404px){
+	.pop_inner_wrap{padding: 0 ;}
+	.box p{width: 100%;}
+	.box img{position: absolute;left: 10%;top: 0;	}
+
+}

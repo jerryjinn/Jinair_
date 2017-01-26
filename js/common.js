@@ -25,7 +25,7 @@ $(function(){
       
       $(window).on("scroll",function(){
         var scT = $(this).scrollTop();
-        var header  = $("#header");
+        var header  = $(".pc #header");
         if($(window).scrollTop() >= 90 ){
           header.addClass("active");
           //header.css({marginTop: + $(window).scrollTop() + "px"});
@@ -135,6 +135,14 @@ $(function(){
     }   
   });
 
+  /*datepicker*/
+  $( function() {
+    $( "#datepicker,#datepicker_2" ).datepicker({
+      showButtonPanel: true
+    });
+  });
+
+
   /*mobile-login슬라이드*/
   $.fn.rsLogin = function(opt){
     var mode = opt.mode;
@@ -152,7 +160,7 @@ $(function(){
       $(".dim_gnb").fadeIn("fast");
     });
     $(document).on("click",".mobile_sign_in_close",function(){
-      $(".sign_in").animate({right:"-500px"},500);
+      $(".sign_in").animate({right:"-800px"},500);
       $(".dim_gnb").fadeOut("fast");
     });
   }
@@ -187,7 +195,7 @@ $(function(){
       $(".dim_gnb").fadeIn("fast");
     });
     $(document).on("click",".mobile_gnb_close",function(){
-      $("#gnb").animate({left:"-500px"},500);
+      $("#gnb").animate({left:"-800px"},500);
       $(".dim_gnb").fadeOut("fast");
     });
   }
