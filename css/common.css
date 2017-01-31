@@ -43,7 +43,7 @@ iframe{border:none;}
 
 /*헤더*/
 #header{position: relative;}
-#header .skip_menu {display: block;z-index: 99999;    }
+#header .skip_menu {display: block;z-index: 99999;}
 #header .skip_menu a{z-index: 99999;background-color: #000;color: #fff;display: block;text-align: center;padding: 5px 0;position: absolute;width: 100%;top: -200px;left: 0;}
 #header.active {height: 43px;position: fixed;width: 100%;z-index: 99;}
 #header.active #gnb{display: none;}

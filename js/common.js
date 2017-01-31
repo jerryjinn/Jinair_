@@ -67,8 +67,6 @@ $(function(){
    }
   });
 
-   /*placeholder사라짐*/
-
     /*로그인 유효성 검사*/
     var frm_log = document.querySelector(".login_wrap form");
     function loginAlt(a,b){

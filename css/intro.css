@@ -24,7 +24,8 @@ background-size: cover;}
 .vision_img img{width: 100%;}
 .img_desc{width: 50%;float: right;padding-left: 2.292%;}
 .int_bottom{background: url(../images/intro/bg_intro_bottom.jpg) center center no-repeat;-webkit-background-size: cover;
-background-size: cover;width: 100%;min-height: 609px;}
+background-size: cover;width: 100%;min-height: 609px;-webkit-background-size: 100%;background-size: 100%;
+background-size: 100%;}
 
 @media (max-width:1024px) {	
 	.int_top_wrap{margin-top: 200px;position: relative;min-height: 310px;}
