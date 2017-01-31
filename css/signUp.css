@@ -8,8 +8,8 @@
 .sign_up h4{margin: 28px 0 16px 0;font-size: 15px;color: #7d0849;}
 .sign_up p{margin-bottom: 41px;}
 .sign_up form label{margin-bottom: 12px;display: inline-block;}
-.sign_up form input[type="text"]{width: 100%;height: 38px;border: 1px solid #c6c2c1;display: inherit;padding-left: 10px;}
-.sign_up select{width: 100%;height: 38px;}
+.sign_up form input[type="text"]{width: 100%;height: 38px;border: 1px solid #c6c2c1;display: inherit;padding: 8px 0 8px 10px;}
+.sign_up select{width: 100%;height: 38px;padding: 8px 0 10px 8px;}
 .select_wrap,.input_wrap,.email_wrap{margin-bottom: 23px;font-size: 15px;}
 .sign_up form .legal_notice{font-size: 14px; color: #7d0849;}
 .sign_up form .legal_notice a{font-weight: bold;color: #7d0849;}
