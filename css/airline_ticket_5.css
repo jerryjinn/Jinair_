@@ -10,6 +10,10 @@ button.btnCloseLayer{font-size: 25px;font-weight: bold;background: none;color: #
 @media(max-width:1024px){
 	.box p{float: none;margin: 0 auto;}
 	.box img{float: none;}
+	.box img{display: block;margin: 0 auto;}
+}
+@media(max-width:768px){
+	.box{min-width: 520px;}
 }
 @media(max-width:404px){
 	.pop_inner_wrap{padding: 0 ;}
